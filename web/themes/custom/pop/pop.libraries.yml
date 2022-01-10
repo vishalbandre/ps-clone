@@ -1,0 +1,15 @@
+bootstrap:
+   version: 1.0
+   css:
+    theme:
+      css/bootstrap.min.css: {}
+   js:
+      js/bootstrap.min.js: {}
+
+global-styling:
+   version: 1.0
+   css:
+    theme:
+      css/global.css : {}
+   js:
+     #js/your_js.js : {}

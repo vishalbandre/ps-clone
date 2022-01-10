@@ -1,0 +1,17 @@
+name: pop
+type: theme
+description: "PopSugar Theme"
+package: Popsugar
+core_version_requirement: ^8 || ^9
+libraries:
+  - pop/bootstrap
+  - pop/global-styling
+
+base theme: bartik
+
+regions:
+  header: Header
+  featured: Featured
+  content: Content
+  sidebar: Sidebar
+  footer: Footer
