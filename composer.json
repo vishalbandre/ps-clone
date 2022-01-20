@@ -20,7 +20,9 @@
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
-        "drupal/pathauto": "^1.8"
+        "drupal/pathauto": "^1.8",
+        "drupal/superfish": "^1.4",
+        "drupal/taxonomy_menu": "^3.5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -88,6 +90,7 @@
         }
     },
     "require-dev": {
+        "drupal/devel": "^4.1",
         "drush/drush": "^10.6",
         "kint-php/kint": "^4.1"
     }

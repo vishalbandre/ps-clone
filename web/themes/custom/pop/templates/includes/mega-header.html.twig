@@ -1,0 +1,39 @@
+<header id="header" class="row">
+	<div class="col">
+		{{ page.ad_banner }}
+		<div class="branding">
+			{{ page.header }}
+		</div>
+	</div>
+	<div id="side-drawer" class="position-fixed">
+		<div class="logo-container">
+			<a href="/" class="drawer-logo">
+				<img class="logo" src="/themes/custom/pop/img/ps-dot-logo.svg"/>
+			</a>
+			<button class="navbar-togglers close-overlay" type="button" onclick="closeSideDrawer()">
+				<span href="#" class="close-icon"></span>
+			</button>
+		</div>
+		<ul class="list-group" id="animate-dia">
+			{{ page.drawer }}
+		</ul>
+	</div>
+	<div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
+
+	<div class="container-fluid p-0" id="main-nav">
+		<div class="row">
+			<div class="col-2 p-0">
+				<button class="navbar-togglers" type="button" onclick="openSideDrawer()">
+					<span class="navbar-toggler-icon"></a>
+				</span>
+			</div>
+			<div class="col-10">
+				{{ page.topnav }}
+				<span class="actions float-end">
+					<a class="action" href="#" id="search-form-switch"></a>
+					<a class="action" href="#" id="favorites-link"></a>
+				</span>
+			</div>
+		</div>
+	</div>
+</header>
