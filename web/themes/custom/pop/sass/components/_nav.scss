@@ -1,0 +1,291 @@
+#header {
+    .region,
+    .region-drawer {
+        #blog-adbanner {
+            .content {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+    .region:first-child {
+        margin-top: -10px;
+    }
+    #block-adbanner {
+        .content {
+            max-height: 250px;
+            img {
+                height: auto;
+                cursor: pointer;
+            }
+        }
+    }
+    .branding {
+        .region-header {
+            position: relative;
+            #block-pop-branding {
+                padding-top: 30px;
+                padding-bottom: 15px;
+                background-color: white;
+                a {
+                    img {
+                        width: 600px;
+                    }
+                }
+            }
+            #block-headerad2 {
+                display: inline;
+                position: absolute;
+                float: right;
+                top: 0;
+                right: 0;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+        }
+    }
+    #main-nav {
+        background-color: white;
+        .navbar-toggler-icon {
+            margin: 5px;
+            margin-top: 3px;
+            font-family: "fontello+hamburger";
+            font-size: 23px;
+            color: $color-blakish;
+            &:before {
+                content: '\e800';
+            }
+        }
+        .region {
+            position: relative;
+            background-color: white;
+            #block-globaltopnavigation {
+                .content {
+                    .main-global-dd {
+                        .sf-depth-1 {
+                            a {
+                                color: $color-menu;
+                                font-family: $font-texta-heavy;
+                                font-size: 13px;
+                                text-transform: uppercase;
+                                transition: all .3s ease;
+                                &:hover {
+                                    color: $color-icon;
+                                }
+                            }
+                        }
+                        .main-global-dd-item {
+                            ul {
+                                .drop-indicator {
+                                    content: '\A0'; // &nbsp;
+                                    border-bottom: 5px solid $color-menu;
+                                }
+                                .drop-indicator::before {
+                                    content: '\A0'; // &nbsp;
+                                }
+                                .drop-indicator::after {
+                                    position: absolute;
+                                    left: 10%;
+                                    transform: translateX(-50%);
+                                    top: 6px;
+                                    margin: 0;
+                                    width: 0;
+                                    height: 0;
+                                    content: ' ';
+                                    border-left: 10px solid transparent;
+                                    border-right: 10px solid transparent;
+                                    border-bottom: 10px solid $color-menu;
+                                }
+                                .bottom-indicator {
+                                    border-bottom: 5px solid $color-menu;
+                                }
+                                li {
+                                    // &:first-child::before {
+                                    //     content: '\A0'; // &nbsp;
+                                    // }
+                                    // &:first-child::after {
+                                    //     position: absolute;
+                                    //     left: 10%;
+                                    //     transform: translateX(-50%);
+                                    //     top: 6px;
+                                    //     margin: 0;
+                                    //     width: 0;
+                                    //     height: 0;
+                                    //     content: ' ';
+                                    //     border-left: 10px solid transparent;
+                                    //     border-right: 10px solid transparent;
+                                    //     border-bottom: 10px solid $color-menu;
+                                    // }
+                                    // &:first-child {
+                                    //     // ...
+                                    //     background-color: black;
+                                    //     a {
+                                    //         margin-top: 5px;
+                                    //         background-color: yellowgreen;
+                                    //     }
+                                    // }
+                                    a {
+                                        padding: 15px;
+                                        background-color: $color-menu;
+                                        font-family: $font-texta-heavy;
+                                        font-size: 13px;
+                                        color: white;
+                                        text-transform: uppercase;
+                                        transition: all .5s ease;
+                                        &:hover {
+                                            background-color: $color-icon;
+                                            color: white;
+                                        }
+                                    }
+                                    // &:last-child a::after {
+                                    //     content: ' ';
+                                    //     padding-bottom: 10px;
+                                    //     background-color: blueviolet;
+                                    // }
+                                }
+                            }
+                            // &:last-child {
+                            //     display: none;
+                            // }
+                        }
+                    }
+                    // .main-global-dd end
+                }
+            }
+            #block-searchform {
+                display: none;
+                position: absolute;
+                right: 0;
+                z-index: 100000;
+                .search-block-form {
+                    padding: 0;
+                    margin-top: 6px;
+                    width: 380px;
+                    .form-item {
+                        .form-search {
+                            padding-left: 30px;
+                            width: 100%;
+                            outline: none;
+                        }
+                    }
+                    .form-actions {
+                        position: absolute;
+                        left: 0;
+                        top: 7px;
+                        margin: 0;
+                        padding: 0;
+                        .form-submit {
+                            background-color: transparent;
+                            border: none;
+                            z-index: 100001;
+                        }
+                    }
+                }
+                #close-search-form {
+                    position: absolute;
+                    right: 0;
+                    top: 7px;
+                    margin: 0;
+                    margin-right: 5px;
+                    padding: 5px;
+                    font-family: "fontello+close";
+                    font-size: 13px;
+                    color: $color-menu;
+                    &:before {
+                        content: '\e800';
+                    }
+                    &:hover {
+                        color: $color-menu;
+                        opacity: 0.9;
+                    }
+                    z-index: 100002;
+                }
+            }
+            // Dead code block
+            block-searchform {
+                .content {
+                    background-color: blue;
+                    search-block-form {
+                        display: flex;
+                        flex-direction: column-reverse;
+                        position: absolute;
+                        right: 25px;
+                        margin: 0;
+                        padding: 5px;
+                        width: 380px;
+                        height: 30px;
+                        z-index: 100000;
+                        background-color: darkred;
+                        .form-item {
+                            // position: absolute;
+                            float: left;
+                            padding: 5px;
+                            background-color: blue;
+                            // padding: 0;
+                            // right: 0;
+                            // margin: 5px;
+                            // padding: 0;
+                            // outline: none;
+                            // width: 380px;
+                            // height: 30px;
+                            // background-color: red;
+                            // z-index: 100000;
+                            .form-search {
+                                // margin-top: 0;
+                                // position: absolute;
+                                background-color: rosybrown;
+                                width: 100%;
+                            }
+                        }
+                        .form-actions {
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            margin: 0;
+                            margin-top: 6px;
+                            padding: 0;
+                            background-color: red;
+                            .form-submit {
+                                z-index: 100001;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .actions {
+            margin-right: 10px;
+            padding: 10px;
+            .action:first-child {
+                margin-right: 5px;
+            }
+            .action:last-child {
+                margin-left: 5px;
+            }
+            #search-form-switch {
+                font-family: "fontello+search";
+                font-size: 18px;
+                color: $color-menu;
+                &:before {
+                    content: '\e800';
+                }
+                &:hover {
+                    color: $color-menu;
+                    opacity: 0.9;
+                }
+            }
+            #favorites-link {
+                font-family: "fontello+star";
+                font-size: 18px;
+                color: $color-menu;
+                &:before {
+                    content: '\e800';
+                }
+                &:hover {
+                    color: $color-menu;
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}
