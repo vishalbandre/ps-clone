@@ -114,7 +114,7 @@ jQuery(function($) {
 
 
 (function($, window, Drupal) {
-    Drupal.behaviors.search = {
+    Drupal.behaviors.top_navbar_tweaks = {
         attach: function(context, settings) {
             /**
              * Top navbar Navigation Tweaks
