@@ -1,0 +1,53 @@
+@keyframes dia-left-to-right {
+    0% {
+        transform: translatex(0px) translatey(0px)
+    }
+    100% {
+        transform: translatex(100px) translatey(100px);
+    }
+}
+
+@-webkit-keyframes lightSpeedIn {
+    0% {
+        -webkit-transform: translateX(100%) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        -webkit-transform: translateX(-20%) skewX(30deg);
+        opacity: 1;
+    }
+    80% {
+        -webkit-transform: translateX(0%) skewX(-15deg);
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: translateX(0%) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes lightSpeedIn {
+    0% {
+        transform: translateX(100%) skewX(-30deg);
+        opacity: 0;
+    }
+    60% {
+        transform: translateX(-20%) skewX(30deg);
+        opacity: 1;
+    }
+    80% {
+        transform: translateX(0%) skewX(-15deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0%) skewX(0deg);
+        opacity: 1;
+    }
+}
+
+.dia {
+    transform-origin: 0 50% 0;
+    transition-delay: 1s;
+    transition: transform .3s ease;
+    transform: matrix(0.85, 0, 0, 0.85, 0, 0);
+}

@@ -1,0 +1,519 @@
+    .navbar-togglers {
+        width: 30px;
+        border: none;
+        background: none;
+    }
+    
+    #side-drawer {
+        height: 100vh;
+        width: 318px;
+        opacity: 1;
+        left: 0;
+        width: 320px;
+        /* Reference: https://forums.envato.com/t/standard-sidebar-width/75633 */
+        z-index: 1032;
+        /* z-index of standard bootstrap navbar is 1030 + 1 offset due to side-drawer-void */
+        top: 0;
+        left: -320px;
+        padding: 0;
+        // transition: left 0.25s ease;
+        overflow: scroll;
+        overflow-x: hidden;
+        background-color: white;
+        z-index: 147483648;
+        transition: all, .3s, ease;
+        padding: 10px 0 0;
+        overflow-y: auto;
+        .logo-container {
+            position: relative;
+            padding-top: 2px;
+            .drawer-logo {
+                // margin: 0;
+                margin-top: 5px;
+                // padding: 0px;
+                // padding-left: 20px;
+                // display: inline-block;
+                padding: 0 30px 15px;
+                display: block;
+                border: none;
+                img {
+                    display: inline-block;
+                    height: 16px;
+                    width: 192px;
+                    vertical-align: middle;
+                    width: 192px;
+                }
+            }
+            .close-overlay {
+                position: absolute;
+                top: 0;
+                right: 14px;
+                font-size: 13px;
+                cursor: pointer;
+                .close-icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 15.8px;
+                    font-size: 13px;
+                    cursor: pointer;
+                    width: 13px;
+                    height: 13px;
+                    font-family: "fontello+cancel";
+                    background-color: $color-gray;
+                    &:before {
+                        content: '\e800';
+                    }
+                    &:hover {
+                        background-color: $color-icon;
+                    }
+                }
+            }
+        }
+        .list-group {}
+        .region {
+            margin: 0;
+            padding: 0;
+            background-color: $color-white !important;
+        }
+        .region-drawer {
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            transform-origin: 0 50% 0;
+            transition-delay: 0.51s;
+            transition: transform .3s ease;
+            margin: 0;
+            margin-top: 0;
+            padding: 0;
+            background-color: $color-whitesmoke;
+            /* Accordion */
+            .menu--global-navigation {
+                margin-top: 10px;
+                background-color: $color-white;
+                .content {
+                    margin: 0;
+                    padding: 0;
+                    .c-menu-global-navigation {
+                        // padding: 0;
+                        display: block;
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0 30px;
+                        .c-menu-global-navigation__item {
+                            padding: 0;
+                            position: relative;
+                            display: list-item;
+                            text-align: -webkit-match-parent;
+                            list-style-type: none;
+                            // width: 245px;
+                            a {
+                                &:first-child {
+                                    display: block;
+                                    padding: 4.5px;
+                                    padding-bottom: 0px;
+                                    padding-left: 0;
+                                    color: $color-primary;
+                                    line-height: 47px;
+                                    // line-height: 1.4;
+                                    font-family: $font-texta-heavy;
+                                    font-size: 15px;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    // font-weight: bold;
+                                    transition: all .3s ease;
+                                    &:hover {
+                                        color: $color-tertiary-tr;
+                                    }
+                                }
+                                &:nth-child(2) {
+                                    color: #acb7c8;
+                                    position: absolute;
+                                    right: 0;
+                                    top: 0;
+                                    padding: 7px;
+                                    padding-right: 0;
+                                    // line-height: 1.4;
+                                    line-height: 47px;
+                                    cursor: pointer;
+                                    font-family: "fontello+three+dots";
+                                    font-size: 18px;
+                                    color: silver;
+                                    &:before {
+                                        content: '\e800';
+                                    }
+                                    &:hover {
+                                        color: $color-icon;
+                                    }
+                                }
+                            }
+                            .c-menu-global-navigation__submenu {
+                                padding: 0;
+                                .c-menu-global-navigation__item {
+                                    padding-left: 0;
+                                    a {
+                                        padding: 0;
+                                        color: $color-text;
+                                        font-size: 15px;
+                                        line-height: 30px;
+                                        text-transform: none;
+                                        font-weight: normal;
+                                        font-family: $font-texta;
+                                        text-transform: capitalize;
+                                        text-decoration: none !important;
+                                        cursor: pointer;
+                                        transition: all .3s ease;
+                                        &:hover {
+                                            color: $color-tertiary-tr;
+                                        }
+                                    }
+                                }
+                            }
+                            .accordion-switch {
+                                margin: 0;
+                                position: absolute;
+                                right: 0;
+                                background-color: transparent;
+                                font-weight: normal;
+                                color: gray;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    .accordion-content {}
+                    .c-menu-global-navigation__item {
+                        max-width: 600px;
+                        margin: 0 auto;
+                    }
+                    #block-globalnavigation-drawer {}
+                }
+            }
+            // Meta menu in drawer navigation
+            .menu--meta-menu,
+            .menu--about-popsugar,
+            .menu--popsugar-legal {
+                padding: 10px 30px;
+                background: $color-whitesmoke;
+                .c-menu-meta-menu__item,
+                .menu-item {
+                    a {
+                        display: block;
+                        font-family: $font-texta;
+                        font-size: 14px;
+                        border-bottom: 1px solid transparent;
+                        line-height: 36px;
+                        color: $color-menu;
+                        &:hover {
+                            color: $color-icon;
+                        }
+                    }
+                }
+            }
+            .menu--about-popsugar {
+                background-color: $color-white;
+            }
+            .menu--about-popsugar,
+            .menu--popsugar-legal {
+                padding-left: 10px;
+            }
+            .menu--popsugar-legal {
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-bottom: -8px;
+            }
+        }
+        #block-copyrights {
+            background-color: $color-whitesmoke;
+            .footer-credits {
+                padding: 25px;
+                padding-top: 10px;
+                font-size: 13px;
+                small {
+                    font-family: $font-texta;
+                    font-size: 12px;
+                    color: #868686;
+                }
+            }
+        }
+    }
+    
+    #side-drawer-void,
+    #mobile-side-drawer-void {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1031;
+        background: rgba(0, 0, 0, .6);
+    }
+    
+    #mobile-side-drawer-void {
+        box-shadow: 5px 0 5px rgb(32 31 30 / 30%);
+        z-index: 1000000;
+    }
+    
+    // Mobile
+    #mobile-header {
+        display: none;
+        // padding: 10px;
+        height: 35px;
+        // max-width: 760px;
+        background-color: $color-white;
+        a.drawer-logo {
+            margin-top: 5px;
+            padding: 10px;
+            padding-left: 8px;
+            float: left;
+            .logo {
+                width: 200px;
+                height: 15px;
+            }
+        }
+        #mobile-actions {
+            float: right;
+        }
+        #mobile-favorites-link {
+            float: left;
+            margin-top: 12px;
+            font-family: "fontello+star";
+            font-size: 20px;
+            color: $color-menu;
+            background-color: $color-white;
+            &:before {
+                content: '\e800';
+            }
+            &:hover {
+                color: $color-menu;
+                opacity: 0.9;
+            }
+        }
+        .navbar-toggler {
+            top: 0;
+            outline: none;
+            border: none;
+            box-shadow: none;
+            background-color: $color-white;
+            &:active,
+            &:hover {
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
+            .ham {
+                font-size: 32px;
+                font-family: 'fontello+hamburger';
+                color: $color-menu;
+                &:before {
+                    content: '\e800';
+                }
+            }
+        }
+    }
+    
+    #mobile-side-drawer {
+        height: 100vh;
+        top: 0;
+        right: -270px;
+        padding: 10px;
+        width: 270px;
+        overflow: scroll;
+        overflow-x: hidden;
+        padding: 10px 0 0;
+        overflow-y: auto;
+        background-color: $color-white;
+        z-index: 100000;
+        transition: ease 0.3s all;
+        .logo-container {
+            margin-top: 2px;
+            margin-bottom: 10px;
+            padding: 4.5px;
+            padding-top: 4px;
+            .drawer-logo {
+                img {
+                    width: 200px;
+                    height: 15px;
+                }
+            }
+            .navbar-toggler {
+                position: absolute;
+                right: 0;
+                top: 0;
+                margin: 7.5px;
+                .cancel {
+                    font-family: 'fontello+close';
+                    font-size: 20px;
+                    color: $color-menu;
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                    &:active,
+                    &:hover {
+                        outline: none;
+                        border: none;
+                        box-shadow: none;
+                    }
+                    &:before {
+                        content: '\e800';
+                    }
+                }
+            }
+        }
+        .region {}
+        .region-mobile-drawer {
+            #block-searchform-2 {
+                margin-top: 2px;
+                margin-bottom: 15px;
+                .search-block-form {
+                    height: 20px;
+                    padding: 0;
+                    padding-left: 5px;
+                    .form-item {
+                        .form-search {
+                            padding: 6.5px;
+                            padding-left: 35px;
+                            width: 100%;
+                            font-family: Arial, Helvetica, sans-serif;
+                            font-size: 14px;
+                            outline: none;
+                            border: solid 1px $color-silver;
+                            border-radius: 3px;
+                            background-color: $color-whitesmoke;
+                        }
+                    }
+                    .form-actions {
+                        position: absolute;
+                        left: 0;
+                        margin: 0px;
+                        .form-submit,
+                        .search-form__submit {
+                            margin: 0;
+                            margin-top: -7.5px;
+                            padding: 0;
+                            margin-left: 10px;
+                            color: #999;
+                            border: none;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            #block-globalnavigationmobile {
+                .content {
+                    .c-menu-global-navigation-mobile {
+                        .c-menu-global-navigation-mobile__item {
+                            a {
+                                display: block;
+                                color: $color-menu;
+                                padding: 0px 20px;
+                                font-family: $font-texta-heavy;
+                                font-size: 14px;
+                                line-height: 40px;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                background-color: $color-white;
+                                border-bottom: solid 1px $color-whitesmoke;
+                                transition: all .3s ease;
+                                &:hover {}
+                            }
+                            .c-menu-global-navigation-mobile__submenu {
+                                li {
+                                    a {
+                                        padding-left: 40px;
+                                        background-color: $color-white;
+                                    }
+                                }
+                            }
+                        }
+                        .c-menu-global-navigation-mobile__item--active-trail>a {
+                            color: white;
+                            background-color: $color-tertiary;
+                        }
+                        .c-menu-global-navigation-mobile__item--active-trail {
+                            .c-menu-global-navigation-mobile__submenu {
+                                li {
+                                    a {
+                                        color: $color-menu;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            #block-popsugarextras,
+            #block-mobilemetamenu,
+            #block-mobiledrawerauthlinks {
+                margin-top: 10px;
+                background-color: $color-white;
+                .content {
+                    .menu {
+                        padding: 0;
+                        .menu-item {
+                            padding: 0;
+                            .is-active {
+                                color: $color-white;
+                                background-color: $color-tertiary;
+                            }
+                            a {
+                                display: block;
+                                color: $color-menu;
+                                padding: 12px 20px;
+                                font-family: $font-texta-heavy;
+                                font-size: 14px;
+                                line-height: 1.1;
+                                text-transform: uppercase;
+                                letter-spacing: 1px;
+                                background-color: $color-white;
+                                border-bottom: solid 1px $color-whitesmoke;
+                                transition: all .3s ease;
+                                &:hover {}
+                            }
+                        }
+                    }
+                }
+            }
+            #block-mobilemetamenu {
+                .content {
+                    .menu {
+                        .menu-item:first-child {
+                            a {
+                                color: $color-pink-popsugar;
+                            }
+                        }
+                    }
+                }
+            }
+            #block-mobilefootercopyrights {
+                .content {
+                    .field--name-body {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                    }
+                    .field--name-body>p {
+                        margin-left: 10px;
+                        margin-bottom: 10px;
+                        font-family: $font-texta;
+                        font-size: 12px;
+                        color: #868686;
+                    }
+                }
+            }
+        }
+    }
+    
+    // Pulling body to left with ease transition
+    .mobile-drawer-set {
+        transition: ease 0.3s all;
+        margin-left: -270px;
+        overflow: hidden;
+    }
+    
+    // Resetting the pulled body to its normal place with ease transition
+    .mobile-drawer-reset {
+        transition: ease 0.3s all;
+        margin-left: 0;
+        overflow: auto;
+    }
+    
+    // Pull mobile header actions to left
+    .mobile-actions {
+        position: absolute;
+        left: 65px;
+        transition: ease 0.3s all;
+    }

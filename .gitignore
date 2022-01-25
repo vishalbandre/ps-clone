@@ -41,3 +41,12 @@ web/themes/README.txt
 # Core files
 web/core
 web/profiles
+
+drush/contrib/
+vendor/
+web/core/
+web/modules/contrib/
+web/modules/ndp/
+web/themes/contrib/
+web/profiles/contrib/
+web/libraries/

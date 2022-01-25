@@ -1,15 +1,31 @@
 bootstrap:
    version: 1.0
    css:
-    theme:
-      css/bootstrap.min.css: {}
+      theme:
+         css/bootstrap.min.css: {}
    js:
       js/bootstrap.min.js: {}
 
 global-styling:
    version: 1.0
    css:
-    theme:
-      css/global.css : {}
+      theme:
+         css/global.css: {}
    js:
-     #js/your_js.js : {}
+      #js/your_js.js : {}
+
+custom:
+   version: 1.0
+   js:
+      js/pop.js: {}
+   dependencies:
+      - core/jquery
+      - core/drupal
+
+# global-styling:
+#   version: VERSION
+#   css:
+#     component:
+#       css/global-styling.css: { weight: -10 }
+#       css/components/forum.css: {}
+#       css/components/header.css: {}
