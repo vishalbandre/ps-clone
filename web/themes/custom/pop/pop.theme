@@ -161,7 +161,6 @@ function theme_menu_item_link($link) {
 
 function pop_form_alter(&$form, $form_state) {
   if($form['#form_id'] == 'search_block_form') {
-    $form['keys']['#attributes']['placeholder'][] = t('Search...');
-    // $form['actions']['submit']['#value'] = t('Search this site');
+    $form['keys']['#attributes']['placeholder'][] = t('Search');
   }
 }

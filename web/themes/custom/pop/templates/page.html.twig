@@ -53,6 +53,7 @@
 <div id="page-wrapper">
 	<div id="page">
 		{% include '@pop/includes/mega-header.html.twig' %}
+		{% include '@pop/includes/mobile-header.html.twig' with { 'logo': logo } %}
 		{% if page.highlighted %}
 			<div class="highlighted">
 				<aside class="layout-container section clearfix" role="complementary">

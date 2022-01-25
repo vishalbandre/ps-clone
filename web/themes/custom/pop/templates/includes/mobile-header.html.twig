@@ -1,20 +1,25 @@
 <header id="mobile-header">
-	<a href="/" class="drawer-logo">
-		<img class="logo" src="/themes/custom/pop/img/pop-logo-black.svg"/>
-	</a>
-	<button class="navbar-toggler close-overlay" type="button" onclick="mobileOpenSideDrawer()">
-		<span href="#" class="ham"></span>
-	</button>
+	<div class="float-start">
+		<a href="/" class="drawer-logo">
+			<img class="logo" src="/themes/custom/pop/img/pop-logo-black.svg"/>
+		</a>
+	</div>
+	<div id="mobile-actions">
+		<a class="action" href="#" id="mobile-favorites-link"></a>
+		<button class="navbar-toggler close-overlay" id="mobile-drawer-button" type="button">
+			<i class="ham"></i>
+		</button>
+	</div>
 </header>
-<div id="mobile-side-drawer-void" class="position-fixed d-none" onclick="mobileCloseSideDrawer()"></div>
+<div id="mobile-side-drawer-void" class="position-fixed d-none"></div>
 
 <div id="mobile-side-drawer" class="position-fixed">
 	<div class="logo-container">
 		<a href="/" class="drawer-logo">
 			<img class="logo" src="/themes/custom/pop/img/pop-logo-black.svg"/>
 		</a>
-		<button class="navbar-toggler close-overlay" type="button" onclick="mobileCloseSideDrawer()">
-			<span href="#" class="ham"></span>
+		<button class="navbar-toggler close-overlay" id="mobile-drawer-close" type="button">
+			<i class="cancel"></i>
 		</button>
 	</div>
 	{{ page.mobile_drawer }}

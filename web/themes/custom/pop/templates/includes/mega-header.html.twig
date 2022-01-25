@@ -10,7 +10,7 @@
 			<a href="/" class="drawer-logo">
 				<img class="logo" src="/themes/custom/pop/img/ps-dot-logo.svg"/>
 			</a>
-			<button class="navbar-togglers close-overlay" type="button" onclick="closeSideDrawer()">
+			<button class="navbar-togglers close-overlay" id="close-drawer" type="button">
 				<span href="#" class="close-icon"></span>
 			</button>
 		</div>
@@ -18,12 +18,12 @@
 			{{ page.drawer }}
 		</ul>
 	</div>
-	<div id="side-drawer-void" class="position-fixed d-none" onclick="closeSideDrawer()"></div>
+	<div id="side-drawer-void" class="position-fixed d-none"></div>
 
 	<div class="container-fluid p-0" id="main-nav">
 		<div class="row">
 			<div class="col-2 p-0">
-				<button class="navbar-togglers" type="button" onclick="openSideDrawer()">
+				<button class="navbar-togglers" type="button" id="open-drawer">
 					<span class="navbar-toggler-icon"></a>
 				</span>
 			</div>

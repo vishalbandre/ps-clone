@@ -1,4 +1,7 @@
 #header {
+    @include breakpoint(mobileonly) {
+        display: none;
+    }
     .region,
     .region-drawer {
         #blog-adbanner {
@@ -14,6 +17,7 @@
     #block-adbanner {
         .content {
             max-height: 250px;
+            overflow: hidden;
             img {
                 height: auto;
                 cursor: pointer;
@@ -287,5 +291,11 @@
                 }
             }
         }
+    }
+}
+
+@include breakpoint(mobileonly) {
+    #mobile-header {
+        display: block;
     }
 }
