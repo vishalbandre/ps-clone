@@ -1,0 +1,8 @@
+uuid: 75730708-e3fe-4aba-ae08-b61c7faf3039
+langcode: en
+status: true
+dependencies: {  }
+id: mobile-meta-menu
+label: 'Mobile Meta Menu'
+description: 'Meta Menu for Mobile Navigation'
+locked: false

@@ -1,0 +1,25 @@
+uuid: 2259f0d2-d740-4725-926c-3765fc50e8de
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.popsugar-legal
+  module:
+    - system
+  theme:
+    - pop
+id: popsugarlegal
+theme: pop
+region: drawer
+weight: -15
+provider: null
+plugin: 'system_menu_block:popsugar-legal'
+settings:
+  id: 'system_menu_block:popsugar-legal'
+  label: 'PopSugar Legal'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

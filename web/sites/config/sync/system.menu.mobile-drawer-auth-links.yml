@@ -1,0 +1,8 @@
+uuid: bb40cbaa-b2ef-491f-a305-5fb98ea55c32
+langcode: en
+status: true
+dependencies: {  }
+id: mobile-drawer-auth-links
+label: 'Mobile Drawer Auth Links'
+description: 'Menu to house the subscribe and login links.'
+locked: false

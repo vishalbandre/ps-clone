@@ -1,0 +1,25 @@
+uuid: b57115ef-4727-422e-b31d-b2a92b4e14c7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a9acbb3f-1968-466c-b8c8-a203737eb148'
+  module:
+    - block_content
+  theme:
+    - pop
+id: copyrights_footer
+theme: pop
+region: footer_fifth
+weight: 0
+provider: null
+plugin: 'block_content:a9acbb3f-1968-466c-b8c8-a203737eb148'
+settings:
+  id: 'block_content:a9acbb3f-1968-466c-b8c8-a203737eb148'
+  label: Copyrights
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

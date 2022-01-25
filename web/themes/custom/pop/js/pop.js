@@ -98,24 +98,27 @@
 })(jQuery, window, Drupal);
 
 
+jQuery(function($) {
+    // Top Search Form Switch
+    $('#search-form-switch').click(function() {
+        $('#header #block-searchform').css("display", "block");
+        $('#header #block-searchform .form-search').focus();
+        $('#header #block-searchform .search-form').append('<a href="#" id="close-search-form"></a>');
+    });
+
+    // Close Search Form
+    $(document).on('click', '#close-search-form', function() {
+        $('#header #block-searchform').css("display", "none");
+    });
+});
+
+
 (function($, window, Drupal) {
     Drupal.behaviors.search = {
         attach: function(context, settings) {
             /**
-             * Top navbar search component
+             * Top navbar Navigation Tweaks
              */
-            // Top Search Form Switch
-            $('#search-form-switch').click(function() {
-                $('#header #block-searchform').css("display", "block");
-                $('#header #block-searchform .form-search').focus();
-                $('#header #block-searchform .search-form').append('<a href="#" id="close-search-form"></a>');
-            });
-
-            // Close Search Form
-            $(document).on('click', '#close-search-form', function() {
-                $('#header #block-searchform').css("display", "none");
-            });
-
             /**
              * Formats text for emphasized display in a placeholder inside a sentence.
              *
@@ -129,9 +132,9 @@
                 return '<li class="' + Drupal.checkPlain(str) + '"></li>';
             };
 
-            // Global Top Navigation Tweaks
             $('#superfish-global-top-navigation .menuparent ul').prepend(Drupal.theme('indicator', 'drop-indicator'));
             $('#superfish-global-top-navigation .menuparent ul').append(Drupal.theme('indicator', 'bottom-indicator'));
+
         }
     };
 

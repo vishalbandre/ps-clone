@@ -1,0 +1,8 @@
+uuid: c94da74d-2b5d-4e9e-8c5a-9c993c0a3b17
+langcode: en
+status: true
+dependencies: {  }
+id: global-top-navigation
+label: 'Global Top Navigation'
+description: 'Global Navigation Menu will be used for generating main drop down navigation.'
+locked: false

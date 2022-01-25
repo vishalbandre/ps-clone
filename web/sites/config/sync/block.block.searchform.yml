@@ -1,0 +1,21 @@
+uuid: ff5f9c80-e898-4740-bdc6-6afb4899b281
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - pop
+id: searchform
+theme: pop
+region: topnav
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

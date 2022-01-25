@@ -1,0 +1,18 @@
+uuid: 526474ab-87b6-4791-9b6a-093f95ff3f97
+langcode: en
+status: true
+dependencies:
+  theme:
+    - pop
+id: pagetitle_2
+theme: pop
+region: footer_first
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

@@ -1,0 +1,16 @@
+uuid: 889aa4b7-f905-4da5-a496-441e4e181073
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.global-navigation
+    - taxonomy.vocabulary.categories
+id: global_navigation
+label: 'Global Navigation'
+vocabulary: categories
+menu: global-navigation
+expanded: false
+depth: 1
+menu_parent: 'admin:entity.taxonomy_vocabulary.collection'
+description_field_name: ''
+use_term_weight_order: true

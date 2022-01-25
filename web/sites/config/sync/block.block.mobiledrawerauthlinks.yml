@@ -1,0 +1,25 @@
+uuid: b40a2caa-411c-439e-bd5c-877bc4353c31
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mobile-drawer-auth-links
+  module:
+    - system
+  theme:
+    - pop
+id: mobiledrawerauthlinks
+theme: pop
+region: mobile_drawer
+weight: -13
+provider: null
+plugin: 'system_menu_block:mobile-drawer-auth-links'
+settings:
+  id: 'system_menu_block:mobile-drawer-auth-links'
+  label: 'Mobile Drawer Auth Links'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

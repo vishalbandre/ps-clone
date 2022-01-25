@@ -1,0 +1,21 @@
+uuid: 3fcf52f1-5ba9-4243-9f31-7ae13cdba8a5
+langcode: en
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - pop
+id: searchform_2
+theme: pop
+region: mobile_drawer
+weight: -17
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }
