@@ -1,4 +1,10 @@
 footer {
+    @include breakpoint(mobileonly) {
+        * {
+            text-align: center;
+            line-height: 2.7;
+        }
+    }
     background-color: $color-whitesmoke;
     line-height: 24px;
     font-size: 14px;
@@ -13,6 +19,9 @@ footer {
             margin: 0;
             padding: 0;
             width: 22%;
+            @include breakpoint(mobileonly) {
+                width: 100%;
+            }
             .region {
                 margin: 0;
                 padding: 0;
@@ -55,6 +64,9 @@ footer {
                             .menu-item:first-child {
                                 a {
                                     color: $color-primary;
+                                    @include breakpoint(mobileonly) {
+                                        color: $color-menu;
+                                    }
                                     font-family: $font-texta-heavy;
                                 }
                             }
@@ -67,6 +79,9 @@ footer {
                             a {
                                 font-family: $font-bold;
                                 color: $color-primary;
+                                @include breakpoint(mobileonly) {
+                                    color: $color-menu;
+                                }
                             }
                         }
                         .app-store-description {
@@ -75,6 +90,9 @@ footer {
                         .app-store-icon {
                             display: inline-block;
                             margin-bottom: 40px;
+                            @include breakpoint(mobileonly) {
+                                margin-bottom: 0;
+                            }
                         }
                     }
                 }
@@ -104,6 +122,9 @@ footer {
                             display: flex;
                             flex-flow: row nowrap;
                             align-items: center;
+                            @include breakpoint(mobileonly) {
+                                justify-content: space-around;
+                            }
                             a {
                                 display: block;
                                 width: 30px;
@@ -115,21 +136,45 @@ footer {
                             }
                             .facebook {
                                 background-color: $color-facebook;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             .instagram {
                                 background-color: $color-instagram;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             .flipboard {
                                 background-color: $color-flipboard;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             .pinterest {
                                 background-color: $color-pinterest;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             .twitter {
                                 background-color: $color-twitter;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             .youtube {
                                 background-color: $color-youtube;
+                                @include breakpoint(mobileonly) {
+                                    background-color: transparent;
+                                    color: $color-menu;
+                                }
                             }
                             li {
                                 float: left;
@@ -168,10 +213,17 @@ footer {
                     margin-left: 10px;
                     font-size: 12px;
                     color: $color-gray;
+                    @include breakpoint(mobileonly) {
+                        display: block;
+                        color: $color-menu;
+                    }
                 }
                 a {
                     display: inline;
                     color: $color-gray;
+                    @include breakpoint(mobileonly) {
+                        color: $color-menu;
+                    }
                 }
             }
         }

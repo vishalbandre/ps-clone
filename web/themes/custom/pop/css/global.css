@@ -1038,6 +1038,12 @@ footer {
   position: relative;
   z-index: 1;
 }
+@media (max-width: 37.5em) {
+  footer * {
+    text-align: center;
+    line-height: 2.7;
+  }
+}
 footer .columns {
   max-width: 1000px;
   margin: 0 auto;
@@ -1048,6 +1054,11 @@ footer .columns .column {
   margin: 0;
   padding: 0;
   width: 22%;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column {
+    width: 100%;
+  }
 }
 footer .columns .column .region {
   margin: 0;
@@ -1103,9 +1114,19 @@ footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-
   color: #002fa7;
   font-family: "Texta Heavy";
 }
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-item:first-child a {
+    color: #2f3846;
+  }
+}
 footer .columns .column .region #block-appstorelinks .content .app-store-link a {
   font-family: "Texta Bold";
   color: #002fa7;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-appstorelinks .content .app-store-link a {
+    color: #2f3846;
+  }
 }
 footer .columns .column .region #block-appstorelinks .content .app-store-description {
   margin: 0 0 10px;
@@ -1113,6 +1134,11 @@ footer .columns .column .region #block-appstorelinks .content .app-store-descrip
 footer .columns .column .region #block-appstorelinks .content .app-store-icon {
   display: inline-block;
   margin-bottom: 40px;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-appstorelinks .content .app-store-icon {
+    margin-bottom: 0;
+  }
 }
 footer .columns .column .region #block-followusblock {
   padding: 0;
@@ -1143,6 +1169,11 @@ footer .columns .column .region #block-followusblock .content .social-follow-but
   flex-flow: row nowrap;
   align-items: center;
 }
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons {
+    justify-content: space-around;
+  }
+}
 footer .columns .column .region #block-followusblock .content .social-follow-buttons a {
   display: block;
   width: 30px;
@@ -1155,20 +1186,56 @@ footer .columns .column .region #block-followusblock .content .social-follow-but
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .facebook {
   background-color: #3b5998;
 }
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .facebook {
+    background-color: transparent;
+    color: #2f3846;
+  }
+}
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .instagram {
   background-color: #405de6;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .instagram {
+    background-color: transparent;
+    color: #2f3846;
+  }
 }
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .flipboard {
   background-color: #e32521;
 }
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .flipboard {
+    background-color: transparent;
+    color: #2f3846;
+  }
+}
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .pinterest {
   background-color: #bd081c;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .pinterest {
+    background-color: transparent;
+    color: #2f3846;
+  }
 }
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .twitter {
   background-color: #1da1f2;
 }
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .twitter {
+    background-color: transparent;
+    color: #2f3846;
+  }
+}
 footer .columns .column .region #block-followusblock .content .social-follow-buttons .youtube {
   background-color: #cd201f;
+}
+@media (max-width: 37.5em) {
+  footer .columns .column .region #block-followusblock .content .social-follow-buttons .youtube {
+    background-color: transparent;
+    color: #2f3846;
+  }
 }
 footer .columns .column .region #block-followusblock .content .social-follow-buttons li {
   float: left;
@@ -1201,9 +1268,20 @@ footer #block-globalcopyrights .content p .copyrights {
   font-size: 12px;
   color: gray;
 }
+@media (max-width: 37.5em) {
+  footer #block-globalcopyrights .content p .copyrights {
+    display: block;
+    color: #2f3846;
+  }
+}
 footer #block-globalcopyrights .content p a {
   display: inline;
   color: gray;
+}
+@media (max-width: 37.5em) {
+  footer #block-globalcopyrights .content p a {
+    color: #2f3846;
+  }
 }
 
 /*# sourceMappingURL=global.css.map */
