@@ -1,0 +1,179 @@
+footer {
+    background-color: $color-whitesmoke;
+    line-height: 24px;
+    font-size: 14px;
+    position: relative;
+    z-index: 1;
+    .columns {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px 20px 15px;
+        .column {
+            float: left;
+            margin: 0;
+            padding: 0;
+            width: 22%;
+            .region {
+                margin: 0;
+                padding: 0;
+                #block-footeraboutpopsugar,
+                #block-footermorepopsugar,
+                #block-footerpopsugarinternational,
+                #block-appstorelinks,
+                #block-followusblock {
+                    .content {
+                        margin: 0;
+                        padding: 0;
+                        .menu {
+                            padding: 0;
+                            .menu-item {
+                                padding: 0;
+                                a {
+                                    color: $color-menu;
+                                    text-decoration: none;
+                                    font-family: $font-texta;
+                                    font-size: 14px;
+                                    line-height: 24px;
+                                    &:hover {
+                                        color: $color-icon;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #block-footermorepopsugar,
+                #block-footerpopsugarinternational {
+                    #block-footermorepopsugar-menu,
+                    #block-footerpopsugarinternational-menu {
+                        font-family: $font-texta-heavy;
+                    }
+                }
+                #block-footeraboutpopsugar {
+                    .content {
+                        .menu {
+                            .menu-item:first-child {
+                                a {
+                                    color: $color-primary;
+                                    font-family: $font-texta-heavy;
+                                }
+                            }
+                        }
+                    }
+                }
+                #block-appstorelinks {
+                    .content {
+                        .app-store-link {
+                            a {
+                                font-family: $font-bold;
+                                color: $color-primary;
+                            }
+                        }
+                        .app-store-description {
+                            margin: 0 0 10px;
+                        }
+                        .app-store-icon {
+                            display: inline-block;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+                #block-followusblock {
+                    padding: 0;
+                    .content>* {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .content {
+                        margin: 0;
+                        margin-top: -7px;
+                        padding: 0;
+                        strong {
+                            margin: 0;
+                            padding: 0;
+                            font-family: $font-texta-heavy;
+                            font-size: 14px;
+                            line-height: 1;
+                            color: $color-menu;
+                        }
+                        .social-follow-buttons>.button-container {
+                            margin-right: 0.5em;
+                        }
+                        .social-follow-buttons {
+                            height: 40px;
+                            display: flex;
+                            flex-flow: row nowrap;
+                            align-items: center;
+                            a {
+                                display: block;
+                                width: 30px;
+                                height: 30px;
+                                line-height: 30px;
+                                text-align: center;
+                                border-radius: 50%;
+                                color: $color-white;
+                            }
+                            .facebook {
+                                background-color: $color-facebook;
+                            }
+                            .instagram {
+                                background-color: $color-instagram;
+                            }
+                            .flipboard {
+                                background-color: $color-flipboard;
+                            }
+                            .pinterest {
+                                background-color: $color-pinterest;
+                            }
+                            .twitter {
+                                background-color: $color-twitter;
+                            }
+                            .youtube {
+                                background-color: $color-youtube;
+                            }
+                            li {
+                                float: left;
+                                margin-right: 5px;
+                                &:last-child {
+                                    margin-right: 0;
+                                }
+                                a {
+                                    display: block;
+                                    color: $color-white;
+                                    background-color: $color-menu;
+                                    border-radius: 100%;
+                                    width: 35px;
+                                    height: 35px;
+                                    text-align: center;
+                                    span {
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #block-globalcopyrights {
+        .content {
+            margin: 0;
+            padding: 0;
+            padding-bottom: 40px;
+            text-align: center;
+            p {
+                .copyrights {
+                    margin-left: 10px;
+                    font-size: 12px;
+                    color: $color-gray;
+                }
+                a {
+                    display: inline;
+                    color: $color-gray;
+                }
+            }
+        }
+    }
+}

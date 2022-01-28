@@ -58,9 +58,19 @@
 			<div class="row">
 				<main class="col" role="main">
 					<section class="section">
-						<a id="main-content" tabindex="-1"></a>						
+						<a id="main-content" tabindex="-1"></a>
 						{{ page.section }}
 						<pre>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -72,30 +82,6 @@
 				</main>
 			</div>
 		</div>
-		<footer class="site-footer">
-			<div class="row">
-				{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
-					<div class="col-md-3">
-						{{ page.footer_first }}
-					</div>
-					<div class="col-md-3">
-						{{ page.footer_second }}
-					</div>
-					<div class="col-md-3">
-						{{ page.footer_third }}
-					</div>
-					<div class="col-md-3">
-						{{ page.footer_fourth }}
-					</div>
-				{% endif %}
-			</div>
-			<div class="row site-footer__bottom">
-				{% if page.footer_fifth %}
-					<div class="">
-						{{ page.footer_fifth }}
-					</div>
-				{% endif %}
-			</div>
-		</footer>
+		{% include '@pop/includes/footer.html.twig' %}
 	</div>
 </div>

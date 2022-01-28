@@ -297,6 +297,7 @@ a {
 
 body {
   padding: 0;
+  font-family: "Texta";
 }
 
 .col,
@@ -1029,6 +1030,180 @@ body {
   #mobile-header {
     display: block;
   }
+}
+footer {
+  background-color: whitesmoke;
+  line-height: 24px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+footer .columns {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 20px 15px;
+}
+footer .columns .column {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 22%;
+}
+footer .columns .column .region {
+  margin: 0;
+  padding: 0;
+}
+footer .columns .column .region #block-footeraboutpopsugar .content,
+footer .columns .column .region #block-footermorepopsugar .content,
+footer .columns .column .region #block-footerpopsugarinternational .content,
+footer .columns .column .region #block-appstorelinks .content,
+footer .columns .column .region #block-followusblock .content {
+  margin: 0;
+  padding: 0;
+}
+footer .columns .column .region #block-footeraboutpopsugar .content .menu,
+footer .columns .column .region #block-footermorepopsugar .content .menu,
+footer .columns .column .region #block-footerpopsugarinternational .content .menu,
+footer .columns .column .region #block-appstorelinks .content .menu,
+footer .columns .column .region #block-followusblock .content .menu {
+  padding: 0;
+}
+footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-item,
+footer .columns .column .region #block-footermorepopsugar .content .menu .menu-item,
+footer .columns .column .region #block-footerpopsugarinternational .content .menu .menu-item,
+footer .columns .column .region #block-appstorelinks .content .menu .menu-item,
+footer .columns .column .region #block-followusblock .content .menu .menu-item {
+  padding: 0;
+}
+footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-item a,
+footer .columns .column .region #block-footermorepopsugar .content .menu .menu-item a,
+footer .columns .column .region #block-footerpopsugarinternational .content .menu .menu-item a,
+footer .columns .column .region #block-appstorelinks .content .menu .menu-item a,
+footer .columns .column .region #block-followusblock .content .menu .menu-item a {
+  color: #2f3846;
+  text-decoration: none;
+  font-family: "Texta";
+  font-size: 14px;
+  line-height: 24px;
+}
+footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-item a:hover,
+footer .columns .column .region #block-footermorepopsugar .content .menu .menu-item a:hover,
+footer .columns .column .region #block-footerpopsugarinternational .content .menu .menu-item a:hover,
+footer .columns .column .region #block-appstorelinks .content .menu .menu-item a:hover,
+footer .columns .column .region #block-followusblock .content .menu .menu-item a:hover {
+  color: #24c4f8;
+}
+footer .columns .column .region #block-footermorepopsugar #block-footermorepopsugar-menu,
+footer .columns .column .region #block-footermorepopsugar #block-footerpopsugarinternational-menu,
+footer .columns .column .region #block-footerpopsugarinternational #block-footermorepopsugar-menu,
+footer .columns .column .region #block-footerpopsugarinternational #block-footerpopsugarinternational-menu {
+  font-family: "Texta Heavy";
+}
+footer .columns .column .region #block-footeraboutpopsugar .content .menu .menu-item:first-child a {
+  color: #002fa7;
+  font-family: "Texta Heavy";
+}
+footer .columns .column .region #block-appstorelinks .content .app-store-link a {
+  font-family: "Texta Bold";
+  color: #002fa7;
+}
+footer .columns .column .region #block-appstorelinks .content .app-store-description {
+  margin: 0 0 10px;
+}
+footer .columns .column .region #block-appstorelinks .content .app-store-icon {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+footer .columns .column .region #block-followusblock {
+  padding: 0;
+}
+footer .columns .column .region #block-followusblock .content > * {
+  margin: 0;
+  padding: 0;
+}
+footer .columns .column .region #block-followusblock .content {
+  margin: 0;
+  margin-top: -7px;
+  padding: 0;
+}
+footer .columns .column .region #block-followusblock .content strong {
+  margin: 0;
+  padding: 0;
+  font-family: "Texta Heavy";
+  font-size: 14px;
+  line-height: 1;
+  color: #2f3846;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons > .button-container {
+  margin-right: 0.5em;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons {
+  height: 40px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  color: #ffffff;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .facebook {
+  background-color: #3b5998;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .instagram {
+  background-color: #405de6;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .flipboard {
+  background-color: #e32521;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .pinterest {
+  background-color: #bd081c;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .twitter {
+  background-color: #1da1f2;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons .youtube {
+  background-color: #cd201f;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons li {
+  float: left;
+  margin-right: 5px;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons li:last-child {
+  margin-right: 0;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons li a {
+  display: block;
+  color: #ffffff;
+  background-color: #2f3846;
+  border-radius: 100%;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+}
+footer .columns .column .region #block-followusblock .content .social-follow-buttons li a span {
+  margin: 0;
+  padding: 0;
+}
+footer #block-globalcopyrights .content {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+  text-align: center;
+}
+footer #block-globalcopyrights .content p .copyrights {
+  margin-left: 10px;
+  font-size: 12px;
+  color: gray;
+}
+footer #block-globalcopyrights .content p a {
+  display: inline;
+  color: gray;
 }
 
 /*# sourceMappingURL=global.css.map */
