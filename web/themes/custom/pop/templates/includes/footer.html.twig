@@ -1,0 +1,21 @@
+<footer>
+	<div class="columns clearfix">
+		{% if page.footer_first or page.footer_second or page.footer_third or page.footer_fourth %}
+			<div class="column">
+				{{ page.footer_first }}
+			</div>
+			<div class="column">
+				{{ page.footer_second }}
+			</div>
+			<div class="column">
+				{{ page.footer_third }}
+			</div>
+			<div class="column">
+				{{ page.footer_fourth }}
+			</div>
+		{% endif %}
+	</div>
+	{% if page.footer_fifth %}
+		{{ page.footer_fifth }}
+	{% endif %}
+</footer>

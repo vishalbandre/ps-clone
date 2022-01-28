@@ -1,0 +1,8 @@
+uuid: 41640106-3ea3-4a8f-8543-78ed0110a4bb
+langcode: en
+status: true
+dependencies: {  }
+id: popsugar-extras
+label: 'PopSugar Extras'
+description: 'PopSugar Extras Menu'
+locked: false

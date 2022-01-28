@@ -1,0 +1,25 @@
+uuid: 5cb9e89b-cce8-47ab-99e4-5e60f26bc4a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.footer---more-popsugar
+  module:
+    - system
+  theme:
+    - pop
+id: footermorepopsugar
+theme: pop
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer---more-popsugar'
+settings:
+  id: 'system_menu_block:footer---more-popsugar'
+  label: 'More POPSUGAR:'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

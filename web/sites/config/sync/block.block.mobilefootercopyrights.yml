@@ -1,0 +1,25 @@
+uuid: 19bd3cb7-9a9e-46bb-892f-c8fc708100e2
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7dd4c6d2-0d7e-4554-8f9f-1d4ddaec3cec'
+  module:
+    - block_content
+  theme:
+    - pop
+id: mobilefootercopyrights
+theme: pop
+region: mobile_drawer
+weight: -12
+provider: null
+plugin: 'block_content:7dd4c6d2-0d7e-4554-8f9f-1d4ddaec3cec'
+settings:
+  id: 'block_content:7dd4c6d2-0d7e-4554-8f9f-1d4ddaec3cec'
+  label: 'Mobile Footer Copyrights'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

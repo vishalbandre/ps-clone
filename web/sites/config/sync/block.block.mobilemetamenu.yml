@@ -1,0 +1,25 @@
+uuid: 22eaff1d-23c3-4efd-b22b-e768d5578c77
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.mobile-meta-menu
+  module:
+    - system
+  theme:
+    - pop
+id: mobilemetamenu
+theme: pop
+region: mobile_drawer
+weight: -14
+provider: null
+plugin: 'system_menu_block:mobile-meta-menu'
+settings:
+  id: 'system_menu_block:mobile-meta-menu'
+  label: 'Mobile Meta Menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

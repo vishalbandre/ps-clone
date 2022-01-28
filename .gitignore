@@ -50,3 +50,6 @@ web/modules/ndp/
 web/themes/contrib/
 web/profiles/contrib/
 web/libraries/
+
+# Theme
+web/themes/custom/pop/css/*

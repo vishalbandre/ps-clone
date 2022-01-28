@@ -1,0 +1,8 @@
+uuid: 9931df10-fdf5-45bf-868b-30d99dada034
+langcode: en
+status: true
+dependencies: {  }
+id: footer---about-popsugar
+label: 'Footer - About PopSugar'
+description: 'PopSugar related links, like, about us, privacy, write for us, etc.'
+locked: false
