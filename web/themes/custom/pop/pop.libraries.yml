@@ -22,6 +22,12 @@ custom:
       - core/jquery
       - core/drupal
 
+homepage:
+   version: 1.0
+   css:
+      theme:
+         css/homepage.css: {}
+
 # global-styling:
 #   version: VERSION
 #   css:

@@ -164,3 +164,19 @@ function pop_form_alter(&$form, $form_state) {
     $form['keys']['#attributes']['placeholder'][] = t('Search');
   }
 }
+
+use Drupal\views\ViewExecutable;
+use Drupal\views\Plugin\views\query\QueryPluginBase;
+
+/**
+ * Implements hook_views_query_alter().
+ */
+function pop_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
+
+  // homepage_featured view
+  if ($view->id() == 'homepage_featured') {
+    echo 'View accessed.';
+  }
+
+  echo 'View accessed.';
+}

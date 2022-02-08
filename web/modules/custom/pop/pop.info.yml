@@ -1,0 +1,5 @@
+name: Pop Essentials
+description: Provides Pop theme essentials.
+type: module
+core_version_requirement: ^8 || ^9
+package: Custom

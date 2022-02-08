@@ -8,6 +8,7 @@ libraries:
   - pop/global-styling
   # - pop/animate
   - pop/custom
+  # - pop/homepage
 
 # libraries-override:
 #   bartik/global-styling: false
