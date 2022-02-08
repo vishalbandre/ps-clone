@@ -12,7 +12,6 @@ global-styling:
       theme:
          css/global.css: {}
    js:
-      #js/your_js.js : {}
 
 custom:
    version: 1.0
@@ -27,11 +26,3 @@ homepage:
    css:
       theme:
          css/homepage.css: {}
-
-# global-styling:
-#   version: VERSION
-#   css:
-#     component:
-#       css/global-styling.css: { weight: -10 }
-#       css/components/forum.css: {}
-#       css/components/header.css: {}
