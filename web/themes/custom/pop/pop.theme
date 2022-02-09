@@ -175,8 +175,7 @@ function pop_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
 
   // homepage_featured view
   if ($view->id() == 'homepage_featured') {
-    echo 'View accessed.';
+    echo t('View accessed.');
   }
-
-  echo 'View accessed.';
+  
 }
