@@ -6,11 +6,7 @@ core_version_requirement: ^8 || ^9
 libraries:
   - pop/bootstrap
   - pop/global-styling
-  # - pop/animate
   - pop/custom
-
-# libraries-override:
-#   bartik/global-styling: false
 
 libraries-override:
   bartik/global-styling:
@@ -23,16 +19,16 @@ libraries-override:
 base theme: bartik
 
 regions:
-  ad_banner: 'Ad Banner'
+  ad_banner: "Ad Banner"
   header: Header
-  topnav: 'Top Navigation'
+  topnav: "Top Navigation"
   section: Section
   content: Content
   sidebar: Sidebar
-  drawer: 'Sidebar Drawer'
-  mobile_drawer: 'Mobile Drawer'
-  footer_first: 'Footer first'
-  footer_second: 'Footer second'
-  footer_third: 'Footer third'
-  footer_fourth: 'Footer fourth'
-  footer_fifth: 'Footer fifth'
+  drawer: "Sidebar Drawer"
+  mobile_drawer: "Mobile Drawer"
+  footer_first: "Footer first"
+  footer_second: "Footer second"
+  footer_third: "Footer third"
+  footer_fourth: "Footer fourth"
+  footer_fifth: "Footer fifth"

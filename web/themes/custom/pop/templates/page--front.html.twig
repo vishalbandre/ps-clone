@@ -51,36 +51,16 @@
  */
 #}
 <div class="page-body">
-	<div class="container-fluid p-0">
+	<div
+		class="container-fluid p-0">
+		{{ attach_library('pop/homepage') }}
+
 		{% include '@pop/includes/mega-header.html.twig' with { 'logo': logo } %}
 		{% include '@pop/includes/mobile-header.html.twig' with { 'logo': logo } %}
 		<div class="content-area">
-			<div class="row">
-				<main class="col" role="main">
-					<section class="section">
-						<a id="main-content" tabindex="-1"></a>
-						{{ page.section }}
-						<pre>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-						</pre>
-					</section>
-				</main>
-			</div>
+			<main role="main">
+				{{ page.content }}
+			</main>
 		</div>
 		{% include '@pop/includes/footer.html.twig' %}
 	</div>
