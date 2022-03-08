@@ -1,0 +1,151 @@
+#block-views-block-homepage-now-you-know-block-1 {
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    background-color: $color-pink-bg;
+    h2 {
+        margin: auto;
+        width: 1160px;
+        font-family: $font-visbycf-heavy;
+        font-size: 48px;
+        line-height: 1.4;
+        @include breakpoint(mobileonly) {
+            margin-left: 5px;
+            padding: 0.5em;
+            padding-bottom: 2px;
+            width: 100%;
+            height: 100%;
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        @include breakpoint(tablet) {
+            width: 768px;
+            padding-left: 1em;
+        }
+        @include breakpoint(laptop) {
+            margin: auto;
+            margin-left: 0.5em;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        @include breakpoint(desktop) {
+            margin: auto;
+            margin-left: 1em;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        text-transform: capitalize;
+        color: $color-dark-blue;
+        background-color: $color-pink-bg;
+        &::after {
+            content: "";
+            display: block;
+            height: 10px;
+            background-image: url(/themes/custom/pop/img/new-squiggly.png);
+            background-repeat: repeat-x;
+            background-size: 150px;
+            width: 350px;
+            @include breakpoint(mobileonly) {
+                height: 20px;
+                width: 205px;
+                font-size: 14px;
+            }
+        }
+    }
+    .content {
+        margin: auto;
+        width: 1160px;
+        @include breakpoint(mobileonly) {
+            width: 100%;
+            height: 100%;
+        }
+        background-color: $color-pink-bg;
+        .view-content {
+            .item-list {
+                ul {
+                    background-color: $color-pink-bg;
+                    margin-top: 2em;
+                    display: grid;
+                    grid-template-columns: 384px 384px;
+                    column-gap: 2.5em;
+                    grid-template-rows: 1fr 1fr 1fr;
+                    grid-auto-rows: 2px;
+                    @include breakpoint(mobileonly) {
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    list-style-type: none;
+                    * {
+                        background-color: $color-pink-bg;
+                    }
+                    @include breakpoint(mobileonly) {
+                        margin-top: 0;
+                        padding-left: 15px;
+                    }
+                    @include breakpoint(tablet) {
+                        display: flex;
+                        flex-direction: column;
+                        width: 768px;
+                        padding-left: 1em;
+                    }
+                    @include breakpoint(laptop) {
+                        display: grid;
+                        grid-template-columns: 580px 580px;
+                    }
+                    @include breakpoint(desktop) {
+                        padding-left: 0;
+                    }
+                    li {
+                        &::before {
+                            margin: 0;
+                            padding: 0;
+                            content: "\2022";
+                            height: 40px;
+                            color: $color-pink-bullet;
+                            font-size: 80px;
+                            font-weight: bold;
+                            display: inline-block;
+                            width: 0.5em;
+                            float: left;
+                            margin-top: -30px;
+                        }
+                        margin: 2em;
+                        margin-top: 0;
+                        margin-left: 0;
+                        margin-bottom: 0;
+                        .views-field {
+                            .field-content {
+                                a {
+                                    margin-bottom: 40px;
+                                    display: flex;
+                                    position: relative;
+                                    font-family: $font-visbycf-heavy;
+                                    color: $color-dark-blue;
+                                    font-size: 20px;
+                                    font-weight: 700;
+                                    line-height: 26px;
+                                    &:hover {
+                                        color: $color-icon;
+                                    }
+                                    @include breakpoint(mobileonly) {
+                                        margin-bottom: 15px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(mobileonly) {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
