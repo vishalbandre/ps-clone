@@ -110,6 +110,12 @@ jQuery(function($) {
     $(document).on('click', '#close-search-form', function() {
         $('#header #block-searchform').css("display", "none");
     });
+
+    // Read more configuration
+    var rm = '<div class="views-field"><div class="field-content"><a href="#" class="read-more"><span>Learn More</span></a></div></div>';
+
+    $('#block-views-block-homepage-spotlight-block-1 .view-content .views-row').append(rm);
+
 });
 
 
