@@ -1,0 +1,164 @@
+#block-views-block-homepage-spotlight-block-1 {
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 1160px;
+    h2 {
+        font-family: $font-visbycf-heavy;
+        font-size: 48px;
+        line-height: 1.4;
+        @include breakpoint(mobileonly) {
+            margin-left: 5px;
+            padding: 0.5em;
+            padding-bottom: 2px;
+            width: 100%;
+            height: 100%;
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        @include breakpoint(tablet) {
+            width: 768px;
+        }
+        @include breakpoint(laptop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        @include breakpoint(desktop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        text-transform: capitalize;
+        color: $color-dark-blue;
+        &::after {
+            content: "";
+            display: block;
+            height: 10px;
+            background-image: url(/themes/custom/pop/img/new-squiggly.png);
+            background-repeat: repeat-x;
+            background-size: 150px;
+            width: 205px;
+            @include breakpoint(mobileonly) {
+                height: 20px;
+                width: 125px;
+                font-size: 14px;
+            }
+        }
+    }
+    .content {
+        .view-content {
+            margin-top: 15px;
+            @include breakpoint(mobileonly) {
+                margin-top: -20px;
+            }
+            .views-row {
+                display: grid;
+                grid-template-columns: 765px 395px;
+                @include breakpoint(tablet) {
+                    grid-template-columns: 507px 261px;
+                }
+                grid-template-rows: 1fr 0.2fr 1fr;
+                grid-auto-rows: 2px;
+                gap: 0;
+                @include breakpoint(mobileonly) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                @include breakpoint(desktop) {
+                    grid-template-columns: 765px 395px;
+                }
+                .views-field {
+                    position: relative;
+                    color: #f0f0f3;
+                    background-color: $color-whitesmoke;
+                }
+                .views-field:nth-child(1) {
+                    grid-row-start: 1;
+                    grid-row-end: 4;
+                    overflow: hidden;
+                    .field-content {
+                        height: 303px;
+                        overflow: hidden;
+                        a {
+                            img {
+                                margin-top: 16px;
+                                width: 100%;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+                .views-field:nth-child(2) a {
+                    position: absolute;
+                    bottom: 10px;
+                    padding: 1em;
+                    padding-bottom: 0;
+                    @include breakpoint(mobileonly) {
+                        bottom: 0;
+                        padding-top: 10px;
+                    }
+                    left: 0;
+                    display: block;
+                    font-size: 24px;
+                    line-height: 1.29;
+                    margin-top: 0;
+                    text-transform: capitalize;
+                    font-family: $font-visbycf-heavy;
+                    color: #061B41;
+                    font-weight: 700;
+                    width: 100%;
+                    background-color: $color-whitesmoke;
+                }
+                .views-field:nth-child(3) p {
+                    display: block;
+                    padding: 2em;
+                    padding-top: 0;
+                    font-family: $font-visbycf-bold;
+                    color: #061B41;
+                    font-size: 14px;
+                    line-height: 1.57;
+                    color: $color-menu;
+                    background-color: $color-whitesmoke;
+                }
+                .views-field:nth-child(4) a {
+                    position: absolute;
+                    bottom: 10px;
+                    margin-left: 8px;
+                    padding: 1.25em;
+                    padding-top: 0;
+                    padding-bottom: 0;
+                    @include breakpoint(mobileonly) {
+                        bottom: 0;
+                        padding-top: 10px;
+                    }
+                    left: 0;
+                    top: 0;
+                    @include breakpoint(mobileonly) {
+                        margin-top: -15px;
+                    }
+                    display: block;
+                    font-size: 16px;
+                    line-height: 2.18;
+                    text-transform: capitalize;
+                    font-family: $font-visbycf-heavy;
+                    color: $color-white;
+                    font-weight: 700;
+                    background-color: $color-whitesmoke;
+                    span {
+                        padding: 8px 16px;
+                        background-color: $color-icon;
+                    }
+                }
+            }
+        }
+    }
+    @include breakpoint(mobileonly) {
+        margin-top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
