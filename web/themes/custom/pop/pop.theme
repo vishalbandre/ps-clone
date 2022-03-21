@@ -52,7 +52,7 @@ function pop_preprocess_page(array &$variables) {
  * Implements hook_theme_suggestions_page_alter().
  */
 function pop_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
+  
 }
 
 /**

@@ -104,30 +104,6 @@
                                     border-bottom: 5px solid $color-menu;
                                 }
                                 li {
-                                    // &:first-child::before {
-                                    //     content: '\A0'; // &nbsp;
-                                    // }
-                                    // &:first-child::after {
-                                    //     position: absolute;
-                                    //     left: 10%;
-                                    //     transform: translateX(-50%);
-                                    //     top: 6px;
-                                    //     margin: 0;
-                                    //     width: 0;
-                                    //     height: 0;
-                                    //     content: ' ';
-                                    //     border-left: 10px solid transparent;
-                                    //     border-right: 10px solid transparent;
-                                    //     border-bottom: 10px solid $color-menu;
-                                    // }
-                                    // &:first-child {
-                                    //     // ...
-                                    //     background-color: black;
-                                    //     a {
-                                    //         margin-top: 5px;
-                                    //         background-color: yellowgreen;
-                                    //     }
-                                    // }
                                     a {
                                         padding: 15px;
                                         background-color: $color-menu;
@@ -141,16 +117,8 @@
                                             color: white;
                                         }
                                     }
-                                    // &:last-child a::after {
-                                    //     content: ' ';
-                                    //     padding-bottom: 10px;
-                                    //     background-color: blueviolet;
-                                    // }
                                 }
                             }
-                            // &:last-child {
-                            //     display: none;
-                            // }
                         }
                     }
                     // .main-global-dd end
@@ -221,22 +189,10 @@
                         z-index: 100000;
                         background-color: darkred;
                         .form-item {
-                            // position: absolute;
                             float: left;
                             padding: 5px;
                             background-color: blue;
-                            // padding: 0;
-                            // right: 0;
-                            // margin: 5px;
-                            // padding: 0;
-                            // outline: none;
-                            // width: 380px;
-                            // height: 30px;
-                            // background-color: red;
-                            // z-index: 100000;
                             .form-search {
-                                // margin-top: 0;
-                                // position: absolute;
                                 background-color: rosybrown;
                                 width: 100%;
                             }
