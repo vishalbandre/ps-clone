@@ -41,12 +41,16 @@
             // Drawer accordion switch (three dot buttons) toggle
             $(".accordion-content").css("display", "none");
 
-            $(".accordion-switch").click(function() {
 
-                $(".accordion-switch").not(this).removeClass("open");
-                $(".accordion-switch").not(this).next().slideUp(300);
-                $(this).toggleClass("open");
-                $(this).next().slideToggle(300);
+            $('#block-globalnavigation-drawer-menu', context).once('according_switch').each(function() {
+
+                $(".accordion-switch").click(function() {
+
+                    $(".accordion-switch").not(this).removeClass("open");
+                    $(".accordion-switch").not(this).next().slideUp(300);
+                    $(this).toggleClass("open");
+                    $(this).next().slideToggle(300);
+                });
             });
 
         }
@@ -111,36 +115,38 @@ jQuery(function($) {
         $('#header #block-searchform').css("display", "none");
     });
 
-    // Read more configuration
-    var rm = '<div class="views-field"><div class="field-content"><a href="#" class="read-more"><span>Learn More</span></a></div></div>';
+    $('#block-anonymoussubscription .form-item-email input').attr('placeholder', 'Enter Your Email');
 
-    $('#block-views-block-homepage-spotlight-block-1 .view-content .views-row').append(rm);
+    $('#block-anonymoussubscription form').append("<div class='msg'>By signing up, I agree to the Terms and Privacy Policy and to receive emails from POPSUGAR.</div>");
 
+    $('#block-anonymoussubscription').append('<div class="illustration img-1"></div><div class="illustration img-2"></div><div class="illustration img-3"></div><div class="illustration img-4"></div><div class="illustration img-5"></div><div class="illustration img-6"></div>');
 });
 
 
 (function($, window, Drupal) {
     Drupal.behaviors.top_navbar_tweaks = {
         attach: function(context, settings) {
-            /**
-             * Top navbar Navigation Tweaks
-             */
-            /**
-             * Formats text for emphasized display in a placeholder inside a sentence.
-             *
-             * @param {string} str
-             *   The text to format (plain-text).
-             *
-             * @return {string}
-             *   The formatted text (html).
-             */
-            Drupal.theme.indicator = function(str) {
-                return '<li class="' + Drupal.checkPlain(str) + '"></li>';
-            };
 
-            $('#superfish-global-top-navigation .menuparent ul').prepend(Drupal.theme('indicator', 'drop-indicator'));
-            $('#superfish-global-top-navigation .menuparent ul').append(Drupal.theme('indicator', 'bottom-indicator'));
+            $('#block-globaltopnavigation', context).once('top_navbar_tweaks').each(function() {
+                /**
+                 * Top navbar Navigation Tweaks
+                 */
+                /**
+                 * Formats text for emphasized display in a placeholder inside a sentence.
+                 *
+                 * @param {string} str
+                 *   The text to format (plain-text).
+                 *
+                 * @return {string}
+                 *   The formatted text (html).
+                 */
+                Drupal.theme.indicator = function(str) {
+                    return '<li class="' + Drupal.checkPlain(str) + '"></li>';
+                };
 
+                $('#superfish-global-top-navigation .menuparent ul').prepend(Drupal.theme('indicator', 'drop-indicator'));
+                $('#superfish-global-top-navigation .menuparent ul').append(Drupal.theme('indicator', 'bottom-indicator'));
+            });
         }
     };
 

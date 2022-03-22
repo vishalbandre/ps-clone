@@ -13,6 +13,7 @@ libraries-override:
     css:
       component:
         css/components/header.css: false
+        css/components/buttons.css: false
       base:
         css/base/elements.css: false
 

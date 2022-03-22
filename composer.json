@@ -16,14 +16,19 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "drupal/anonymous_subscriptions": "^1.0@alpha",
         "drupal/console": "^1.9",
         "drupal/core-composer-scaffold": "^9.3",
         "drupal/core-project-message": "^9.3",
         "drupal/core-recommended": "^9.3",
         "drupal/fontawesome": "^2.19",
+        "drupal/mailing_subscriber": "2.0.x-dev@dev",
         "drupal/pathauto": "^1.8",
+        "drupal/simplenews": "^3.0@beta",
         "drupal/superfish": "^1.4",
-        "drupal/taxonomy_menu": "^3.5"
+        "drupal/taxonomy_menu": "^3.5",
+        "drupal/views_complex_grouping": "^1.0@beta",
+        "drupal/views_fieldsets": "^3.4"
     },
     "conflict": {
         "drupal/drupal": "*"

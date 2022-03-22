@@ -1,0 +1,395 @@
+#block-views-block-homepage-celebrity-block-1 {
+    margin: auto;
+    margin-top: 3rem;
+    padding-top: 75px;
+    padding-bottom: 30px;
+    width: 1160px;
+    @include breakpoint(mobileonly) {
+        padding: 0.5em;
+        padding-bottom: 2px;
+        width: 100%;
+    }
+    @include breakpoint(tablet) {
+        width: 768px;
+    }
+    @include breakpoint(laptop) {
+        margin: auto;
+        width: 1160px;
+    }
+    @include breakpoint(desktop) {
+        margin: auto;
+        width: 1160px;
+    }
+    h2 {
+        font-family: $font-visbycf-heavy;
+        font-size: 48px;
+        line-height: 1.4;
+        @include breakpoint(mobileonly) {
+            padding: 0.5em;
+            padding-bottom: 2px;
+            width: 100%;
+            height: 100%;
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        @include breakpoint(tablet) {
+            width: 768px;
+        }
+        @include breakpoint(laptop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        @include breakpoint(desktop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 48px;
+            line-height: 1.4;
+        }
+        text-transform: capitalize;
+        color: $color-dark-blue;
+        &::after {
+            content: "";
+            display: block;
+            height: 10px;
+            background-image: url(/themes/custom/pop/img/new-squiggly.png);
+            background-repeat: repeat-x;
+            background-size: 150px;
+            width: 205px;
+            @include breakpoint(mobileonly) {
+                height: 20px;
+                width: 125px;
+                font-size: 14px;
+            }
+        }
+    }
+    .content {
+        div {
+            .attachment {
+                display: grid;
+                grid-template-columns: 765px 395px;
+                grid-template-rows: 1fr auto;
+                grid-auto-rows: 2px;
+                gap: 0;
+                @include breakpoint(mobileonly) {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                }
+                @include breakpoint(mobileonly) {
+                    margin-top: 0;
+                    width: 100%;
+                }
+                @include breakpoint(tablet) {
+                    margin-top: 0;
+                    width: 90%;
+                }
+                @include breakpoint(desktop) {
+                    margin-top: 0;
+                    width: 1160px;
+                }
+                .views-element-container:first-child {
+                    .view-content {
+                        .item-list {
+                            ul {
+                                li {
+                                    padding: 0;
+                                    .views-field-field-image {
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                    .views-field-field-tags {
+                                        .field-content {
+                                            a {
+                                                margin-top: 10px;
+                                                margin-bottom: 10px;
+                                                display: block;
+                                                font-family: $font-visbycf-heavy;
+                                                font-size: 12px;
+                                                line-height: 13px;
+                                                @include breakpoint(mobileonly) {
+                                                    font-size: 10px;
+                                                }
+                                                color: $color-primary;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+                                    .views-field-title {
+                                        a {
+                                            font-family: $font-visbycf-heavy;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            line-height: 26px;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                            }
+                                            color: $color-menu;
+                                            &:hover {
+                                                color: $color-icon;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .views-element-container:nth-child(2) {
+                    .view-content {
+                        .item-list {
+                            ul {
+                                display: flex;
+                                flex-direction: column-reverse;
+                                padding-left: 20px;
+                                padding-right: 20px;
+                                @include breakpoint(mobileonly) {
+                                    display: flex;
+                                    flex-direction: column;
+                                    margin-top: 0;
+                                    width: 100%;
+                                    padding-left: 0;
+                                    padding-right: 0;
+                                }
+                                li {
+                                    margin-bottom: 6px;
+                                    padding-bottom: 8px;
+                                    border-bottom: solid 1px $color-whitesmoke;
+                                    .views-field-field-tags {
+                                        .field-content {
+                                            a {
+                                                margin-top: 10px;
+                                                margin-bottom: 10px;
+                                                display: block;
+                                                font-family: $font-visbycf-heavy;
+                                                font-size: 12px;
+                                                line-height: 13px;
+                                                @include breakpoint(mobileonly) {
+                                                    font-size: 10px;
+                                                }
+                                                color: $color-primary;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+                                    .views-field-title {
+                                        a {
+                                            font-family: $font-visbycf-heavy;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            line-height: 22px;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                            }
+                                            color: $color-menu;
+                                            &:hover {
+                                                color: $color-icon;
+                                            }
+                                        }
+                                    }
+                                    &:first-child {
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#block-views-block-homepage-celebrity-2-block-1 {
+    margin: auto;
+    padding-bottom: 75px;
+    width: 1160px;
+    @include breakpoint(mobileonly) {
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        div {
+            .attachment {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 1fr auto;
+                grid-auto-rows: 2px;
+                gap: 0;
+                @include breakpoint(mobileonly) {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .views-element-container:first-child {
+                    @include breakpoint(mobileonly) {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                    .view-content {
+                        .item-list {
+                            ul {
+                                li {
+                                    margin-bottom: 10px;
+                                    .views-field {
+                                        .field-content {
+                                            .celeb-3 {
+                                                display: flex;
+                                                flex-direction: row;
+                                                .col1 {
+                                                    a {
+                                                        img {
+                                                            width: 100px;
+                                                            height: 100px;
+                                                        }
+                                                    }
+                                                }
+                                                .col2 {
+                                                    padding-left: 20px;
+                                                    padding-right: 20px;
+                                                    display: flex;
+                                                    flex-direction: column;
+                                                    a:first-child {
+                                                        margin-top: 10px;
+                                                        margin-bottom: 10px;
+                                                        display: block;
+                                                        font-family: $font-visbycf-heavy;
+                                                        font-size: 12px;
+                                                        line-height: 13px;
+                                                        @include breakpoint(mobileonly) {
+                                                            font-size: 10px;
+                                                        }
+                                                        color: $color-primary;
+                                                        text-transform: uppercase;
+                                                    }
+                                                    a:last-child {
+                                                        font-family: $font-visbycf-heavy;
+                                                        font-size: 16px;
+                                                        font-weight: bold;
+                                                        line-height: 22px;
+                                                        @include breakpoint(mobileonly) {
+                                                            font-size: 15px;
+                                                            line-height: 20px;
+                                                        }
+                                                        color: $color-menu;
+                                                        &:hover {
+                                                            color: $color-icon;
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .views-field-field-image {
+                                        img {
+                                            width: 100px;
+                                            height: 100px;
+                                        }
+                                        @include breakpoint(mobileonly) {
+                                            display: none;
+                                        }
+                                    }
+                                    .views-field-field-tags {
+                                        .field-content {
+                                            a {
+                                                font-family: $font-visbycf-heavy;
+                                                font-size: 12px;
+                                                line-height: 13px;
+                                                @include breakpoint(mobileonly) {
+                                                    font-size: 10px;
+                                                }
+                                                color: $color-primary;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+                                    .views-field-title {
+                                        a {
+                                            font-family: $font-visbycf-heavy;
+                                            font-size: 16px;
+                                            font-weight: bold;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                            }
+                                            color: $color-menu;
+                                            &:hover {
+                                                color: $color-icon;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .views-element-container:nth-child(2) {
+                    .view-content {
+                        .item-list {
+                            ul {
+                                display: grid;
+                                grid-template-columns: 50% 50%;
+                                grid-template-rows: 1fr auto;
+                                grid-auto-rows: 2px;
+                                gap: 10px;
+                                padding-left: 15px;
+                                padding-right: 15px;
+                                li {
+                                    margin-bottom: 6px;
+                                    padding-bottom: 8px;
+                                    border-bottom: solid 1px $color-whitesmoke;
+                                    .views-field-field-image {
+                                        img {
+                                            width: 100%;
+                                            height: auto;
+                                        }
+                                    }
+                                    .views-field-field-tags {
+                                        .field-content {
+                                            a {
+                                                margin-top: 10px;
+                                                margin-bottom: 10px;
+                                                display: block;
+                                                font-family: $font-visbycf-heavy;
+                                                font-size: 12px;
+                                                line-height: 13px;
+                                                @include breakpoint(mobileonly) {
+                                                    font-size: 10px;
+                                                }
+                                                color: $color-primary;
+                                                text-transform: uppercase;
+                                            }
+                                        }
+                                    }
+                                    .views-field-title {
+                                        a {
+                                            font-family: $font-visbycf-heavy;
+                                            font-size: 20px;
+                                            font-weight: bold;
+                                            line-height: 26px;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                            }
+                                            color: $color-menu;
+                                            &:hover {
+                                                color: $color-icon;
+                                            }
+                                        }
+                                    }
+                                    &:first-child {
+                                        border-bottom: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,225 @@
+#block-anonymoussubscription {
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 50px;
+    padding-bottom: 95px;
+    width: 100%;
+    background-image: url(/themes/custom/pop/img/newsletter.png);
+    overflow: hidden;
+    .img-1,
+    .img-2,
+    .img-3,
+    .img-4,
+    .img-5,
+    .img-6 {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        background-repeat: no-repeat;
+    }
+    .img-1 {
+        background-image: url(/themes/custom/pop/img/Asset1.png);
+        top: 70px;
+        left: 225px;
+    }
+    .img-2 {
+        background-image: url(/themes/custom/pop/img/Asset2.png);
+        width: 30px;
+        height: 45px;
+        right: 225px;
+        top: 75px;
+    }
+    .img-3 {
+        background-image: url(/themes/custom/pop/img/Asset3.png);
+        width: 40px;
+        height: 43px;
+        right: 2px;
+        top: 75px;
+    }
+    .img-4 {
+        background-image: url(/themes/custom/pop/img/Asset4.png);
+        width: 43px;
+        height: 43px;
+        left: 0;
+        bottom: 75px;
+    }
+    .img-5 {
+        background-image: url(/themes/custom/pop/img/Asset5.png);
+        top: 50px;
+        left: 100px;
+        width: 45px;
+        height: 45px;
+    }
+    .img-6 {
+        background-image: url(/themes/custom/pop/img/Asset6.png);
+        width: 40px;
+        height: 43px;
+        right: 100px;
+        bottom: 75px;
+    }
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include breakpoint(mobileonly) {
+        margin-top: 0;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 100%;
+        display: none;
+    }
+    @include breakpoint(tablet) {
+        margin-top: 0;
+        width: 90%;
+    }
+    @include breakpoint(desktop) {
+        margin-top: 0;
+        width: 100%;
+    }
+    h2 {
+        margin: auto;
+        margin-top: 3rem;
+        width: 1160px;
+        font-family: $font-visbycf-heavy;
+        font-size: 28px;
+        line-height: 39px;
+        text-align: center;
+        @include breakpoint(mobileonly) {
+            padding: 0.5em;
+            padding-bottom: 2px;
+            width: 100%;
+            height: 100%;
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        @include breakpoint(tablet) {
+            width: 768px;
+        }
+        @include breakpoint(laptop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 28px;
+            line-height: 39px;
+            color: white;
+        }
+        @include breakpoint(desktop) {
+            margin: auto;
+            width: 1160px;
+            font-size: 28px;
+            line-height: 39px;
+            color: white;
+        }
+        text-transform: capitalize;
+        color: $color-dark-blue;
+        background-color: transparent;
+        &::after {
+            content: "";
+            display: block;
+            height: 10px;
+        }
+    }
+    .content {
+        margin: auto;
+        width: 575px;
+        @include breakpoint(mobileonly) {
+            width: 100%;
+            height: 100%;
+        }
+        #anonymous-subscriptions-subscribe-form {
+            background-color: #001d67;
+            input {
+                margin: 0;
+            }
+            p {
+                display: none;
+            }
+            .form-item,
+            .form-actions {
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+            .form-item-email {
+                label.form-required {
+                    display: none;
+                }
+            }
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 1fr auto;
+            grid-auto-rows: 2px;
+            gap: 0;
+            @include breakpoint(mobileonly) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+            .form-item-email {
+                input {
+                    margin: 0;
+                    padding: 8px 15px;
+                    width: 300px;
+                    height: 50px;
+                    background-color: #001d67;
+                    border: 2px solid #fff;
+                    color: #fff;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    display: inline-block;
+                    padding: 8px 10px;
+                    font-size: 18px;
+                    line-height: 24px;
+                    border-radius: 0;
+                    vertical-align: middle;
+                    &:focus,
+                    &:active {
+                        outline: none;
+                    }
+                }
+            }
+            #edit-submit {
+                border-radius: 0%;
+                line-height: 2em;
+                width: 300px;
+                height: 50px;
+                font-size: 18px;
+                line-height: 36px;
+                font-weight: 900;
+                color: $color-whitesmoke;
+                border: none;
+                background-color: #24c4f8 !important;
+                border: 2px solid #24c4f8;
+            }
+            .button,
+            .js-form-submit,
+            .form-submit {
+                margin-left: 15px;
+                background-color: #24c4f8;
+                border: 2px solid #24c4f8;
+                background: #24c4f8;
+                color: #fff;
+                text-transform: capitalize;
+                font-size: 18px;
+                &:hover,
+                &:active,
+                &:focus {
+                    background-color: #24c4f8;
+                    color: white;
+                }
+            }
+            .msg {
+                position: absolute;
+                left: 32.5%;
+                bottom: 50px;
+                background-color: transparent;
+                color: silver;
+                font-size: 12px;
+                letter-spacing: 0.5px;
+                text-align: center;
+                margin: .5em 0 1em;
+                line-height: 1.3;
+            }
+        }
+    }
+}
