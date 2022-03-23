@@ -28,7 +28,8 @@
         "drupal/superfish": "^1.4",
         "drupal/taxonomy_menu": "^3.5",
         "drupal/views_complex_grouping": "^1.0@beta",
-        "drupal/views_fieldsets": "^3.4"
+        "drupal/views_fieldsets": "^3.4",
+        "drupal/views_infinite_scroll": "^2.0"
     },
     "conflict": {
         "drupal/drupal": "*"

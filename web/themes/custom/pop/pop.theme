@@ -179,3 +179,12 @@ function pop_views_query_alter(ViewExecutable $view, QueryPluginBase $query) {
   }
   
 }
+
+/**
+ * Preprocess for view.
+ */
+function pop_preprocess_views_view(&$variables) {
+  if ($variables['view']->storage->id() == 'taxonomy') {
+    $variables['#attached']['library'][] = 'pop/taxonomy';
+  }
+}

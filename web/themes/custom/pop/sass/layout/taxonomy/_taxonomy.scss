@@ -1,0 +1,337 @@
+.view-id-taxonomy {
+    * {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+    @include breakpoint(mobileonly) {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .attachment {
+        .views-element-container:first-child {
+            .view-taxonomy {
+                .view-content {
+                    .item-list {
+                        ul {
+                            display: grid;
+                            grid-template-columns: 25% 25% 25% 25%;
+                            text-align: center;
+                            @include breakpoint(mobileonly) {
+                                display: flex;
+                                flex-direction: column;
+                                width: 100%;
+                            }
+                            li {
+                                position: relative;
+                                padding: 0;
+                                .views-field-field-image {
+                                    .field-content {
+                                        a {
+                                            img {
+                                                width: 100%;
+                                                height: 100%;
+                                                @include breakpoint(mobileonly) {
+                                                    width: 100%;
+                                                    height: 100%;
+                                                }
+                                                @include breakpoint(tablet) {
+                                                    object-fit: cover;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .views-field-field-tags {
+                                    position: absolute;
+                                    bottom: 80px;
+                                    @include breakpoint(mobileonly) {
+                                        bottom: 40px;
+                                    }
+                                    @include breakpoint(tablet) {
+                                        bottom: 85px;
+                                    }
+                                    @include breakpoint(laptop) {
+                                        bottom: 90px;
+                                    }
+                                    @include breakpoint(laptop) {
+                                        bottom: 115px;
+                                    }
+                                    width: 100%;
+                                    background-color: none;
+                                    .field-content {
+                                        a {
+                                            display: block;
+                                            font-family: $font-visbycf-heavy;
+                                            font-size: 12px;
+                                            line-height: 13px;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 10px;
+                                            }
+                                            color: $color-primary;
+                                            text-transform: uppercase;
+                                            font-family: $font-ps-savoy;
+                                            font-size: 11px;
+                                            letter-spacing: 1px;
+                                            background-color: $color-white;
+                                            display: inline-block;
+                                            min-height: 25px;
+                                            padding: 10px 25px 0;
+                                            line-height: 14px;
+                                        }
+                                    }
+                                }
+                                .views-field-title {
+                                    .field-content {
+                                        a {
+                                            font-family: $font-ps-savoy;
+                                            font-size: 24px;
+                                            line-height: 32px;
+                                            padding: 5px 20px;
+                                            @include breakpoint(mobileonly) {
+                                                font-size: 15px;
+                                                line-height: 20px;
+                                            }
+                                            color: $color-menu;
+                                            &:hover {
+                                                color: $color-icon;
+                                            }
+                                        }
+                                    }
+                                }
+                                .views-field-uid {
+                                    .field-content {
+                                        a {
+                                            display: block;
+                                            font-family: $font-texta;
+                                            text-align: center;
+                                            line-height: 20px;
+                                            font-size: 12px;
+                                            color: $color-dark-electric-blue;
+                                            text-transform: uppercase;
+                                            letter-spacing: 1px;
+                                            &::before {
+                                                content: "by ";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .views-element-container:nth-child(2) {
+            margin-top: 50px;
+            .view-id-taxonomy {
+                .view-content {
+                    .item-list {
+                        ul {
+                            li {
+                                padding: 0;
+                                .views-field {
+                                    .field-content {
+                                        .taxo-container {
+                                            display: grid;
+                                            grid-template-columns: 66% 34%;
+                                            grid-template-rows: auto auto;
+                                            gap: 0;
+                                            @include breakpoint(mobileonly) {
+                                                grid-template-columns: 100%;
+                                            }
+                                            .thumbnail {
+                                                a {
+                                                    img {
+                                                        width: 100%;
+                                                    }
+                                                }
+                                            }
+                                            .field-meta {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                .tag {
+                                                    a {
+                                                        display: block;
+                                                        font-family: $font-visbycf-heavy;
+                                                        font-size: 12px;
+                                                        line-height: 13px;
+                                                        text-align: center;
+                                                        @include breakpoint(mobileonly) {
+                                                            font-size: 10px;
+                                                        }
+                                                        color: $color-primary;
+                                                        text-transform: uppercase;
+                                                    }
+                                                }
+                                                .title {
+                                                    a {
+                                                        display: block;
+                                                        padding: 5px 20px;
+                                                        font-family: $font-ps-savoy;
+                                                        font-size: 24px;
+                                                        line-height: 32px;
+                                                        text-align: center;
+                                                        @include breakpoint(mobileonly) {
+                                                            font-size: 15px;
+                                                            line-height: 20px;
+                                                        }
+                                                        color: $color-menu;
+                                                        &:hover {
+                                                            color: $color-icon;
+                                                        }
+                                                    }
+                                                }
+                                                .author {
+                                                    a {
+                                                        display: block;
+                                                        font-family: $font-texta;
+                                                        text-align: center;
+                                                        line-height: 20px;
+                                                        font-size: 12px;
+                                                        color: $color-dark-electric-blue;
+                                                        text-transform: uppercase;
+                                                        letter-spacing: 1px;
+                                                        &::before {
+                                                            content: "by ";
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .view-content {
+        .views-infinite-scroll-content-wrapper {
+            margin: 0 auto;
+            margin-left: 150px;
+            width: 765px;
+            @include breakpoint(mobileonly) {
+                margin-left: 0;
+                width: 100%;
+            }
+            @include breakpoint(tablet) {
+                width: 100%;
+            }
+            @include breakpoint(laptop) {
+                margin-left: 150px;
+                width: 765px;
+            }
+            .ad_place {
+                right: 150px;
+                width: 200px;
+                height: 200px;
+                text-align: center;
+                vertical-align: middle;
+                background-color: whitesmoke;
+                border: solid 1px silver;
+                z-index: 100000;
+            }
+            .latest {
+                margin-top: 20px;
+                margin-bottom: 20px;
+                font-size: 32px;
+                font-family: $font-ps-savoy;
+                font-weight: lighter;
+                text-transform: capitalize;
+                line-height: 1.15;
+                &::after {
+                    display: block;
+                    width: 105px;
+                    height: 7px;
+                    background-image: linear-gradient(to right, #2131a9 33.33%, #5188d9 33.33%, #5188d9 66.66%, #c6ecfd 66.66%, #c6ecfd);
+                    content: "";
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    .item-list {
+        ul {
+            li {
+                margin-bottom: 20px;
+                padding: 0;
+                .views-field {
+                    .field-content {
+                        .taxonomy-item {
+                            .taxonomy-header {
+                                display: flex;
+                                flex-direction: row;
+                                .tag {
+                                    a {
+                                        margin-top: 10px;
+                                        margin-bottom: 10px;
+                                        display: block;
+                                        font-family: $font-visbycf-heavy;
+                                        font-size: 12px;
+                                        line-height: 13px;
+                                        @include breakpoint(mobileonly) {
+                                            font-size: 10px;
+                                        }
+                                        color: $color-primary;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                .time-ago {
+                                    padding: 9px;
+                                    font-size: 12px;
+                                    line-height: 13px;
+                                    font-family: $font-texta;
+                                    color: $color-old-silver;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .title {
+                                margin-bottom: 5px;
+                                a {
+                                    font-family: $font-ps-savoy;
+                                    font-size: 24px;
+                                    line-height: 32px;
+                                    font-weight: lighter;
+                                    @include breakpoint(mobileonly) {
+                                        font-size: 15px;
+                                        line-height: 20px;
+                                    }
+                                    color: $color-menu;
+                                    &:hover {
+                                        color: $color-icon;
+                                    }
+                                }
+                            }
+                            .thumbnail {
+                                a {
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                            .author {
+                                a {
+                                    display: inline-block;
+                                    font-family: $font-texta;
+                                    line-height: 20px;
+                                    font-size: 12px;
+                                    color: $color-dark-electric-blue;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    &::before {
+                                        content: "by ";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

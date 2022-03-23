@@ -26,3 +26,9 @@ homepage:
    css:
       theme:
          css/homepage.css: {}
+
+taxonomy:
+   version: 1.0
+   css:
+      theme:
+         css/taxonomy.css: {}

@@ -120,6 +120,34 @@ jQuery(function($) {
     $('#block-anonymoussubscription form').append("<div class='msg'>By signing up, I agree to the Terms and Privacy Policy and to receive emails from POPSUGAR.</div>");
 
     $('#block-anonymoussubscription').append('<div class="illustration img-1"></div><div class="illustration img-2"></div><div class="illustration img-3"></div><div class="illustration img-4"></div><div class="illustration img-5"></div><div class="illustration img-6"></div>');
+
+    $('.views-infinite-scroll-content-wrapper').prepend('<div class="latest">PopSugar Latest</div>');
+
+    $('.views-infinite-scroll-content-wrapper').prepend('<div class="ad_place">Ad Place</div>');
+
+    var fixmeTop = $('.ad_place').offset().top; // get initial position of the element
+
+    $(window).scroll(function() { // assign scroll event listener
+
+        var currentScroll = $(window).scrollTop(); // get current position
+
+        if (currentScroll >= fixmeTop) { // apply position: fixed if you
+            $('.ad_place').css({ // scroll to that element or below it
+                position: 'fixed',
+                top: '100px',
+                right: '150px',
+                left: 'right',
+                'z-index': '9999'
+            });
+        } else { // apply position: static
+            $('.ad_place').css({ // if you scroll above it
+                position: 'absolute',
+                'z-index': '-9999'
+            });
+        }
+
+    });
+
 });
 
 
