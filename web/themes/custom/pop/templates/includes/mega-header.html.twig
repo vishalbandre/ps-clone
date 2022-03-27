@@ -29,6 +29,13 @@
 			</div>
 			<div class="col-10">
 				{{ page.topnav }}
+				{% if category|default %}
+				<div class="pop-logo-cat">
+					<a href="/" class="drawer-logo">
+						<img class="logo" src="/themes/custom/pop/img/ps-dot-logo.svg"/>
+					</a> <div class="Category">{{ category }}</div>
+				</div>
+				{% endif %}
 				<span class="actions float-end">
 					<a class="action" href="#" id="search-form-switch"></a>
 					<a class="action" href="#" id="favorites-link"></a>

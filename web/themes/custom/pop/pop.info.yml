@@ -25,6 +25,7 @@ regions:
   topnav: "Top Navigation"
   section: Section
   content: Content
+  social_sharing: "Social Sharing Block"
   sidebar: Sidebar
   drawer: "Sidebar Drawer"
   mobile_drawer: "Mobile Drawer"
