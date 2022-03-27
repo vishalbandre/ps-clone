@@ -1,0 +1,260 @@
+#main {
+    #content {
+        * {
+            background-color: $color-white;
+        }
+        .section {
+            margin: auto;
+            width: 1160px;
+            .region {
+                position: relative;
+                padding: 10px;
+                * {
+                    overflow-wrap: break-word;
+                    word-wrap: break-word;
+                    -ms-word-break: break-all;
+                    word-break: break-word;
+                    -ms-hyphens: auto;
+                    -moz-hyphens: auto;
+                    -webkit-hyphens: auto;
+                    hyphens: auto;
+                }
+                #block-breadcrumbs {
+                    width: 765px;
+                    .content {
+                        .breadcrumb {
+                            ol {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                                display: inline;
+                                li {
+                                    font-family: $font-texta;
+                                    font-size: 12px;
+                                    line-height: 30px;
+                                    color: $color-bermuda-gray;
+                                    a {
+                                        color: $color-bermuda-gray;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .detailed-main {
+                    width: 765px;
+                    header {
+                        .title {
+                            margin: 0;
+                            span.field--name-title {
+                                text-align: left;
+                                letter-spacing: -1px;
+                                color: $color-dark-blue;
+                                font-size: 30px;
+                                font-family: $font-visbycf-heavy;
+                            }
+                        }
+                        .meta-and-share {
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                            .author-meta {
+                                margin-top: 10px;
+                                display: flex;
+                                flex-direction: row;
+                                .author-thumbnail {
+                                    article {
+                                        .field--name-user-picture {
+                                            a {
+                                                img {
+                                                    width: 52px;
+                                                    height: 52px;
+                                                    overflow: hidden;
+                                                    float: left;
+                                                    background-position: 50% 0;
+                                                    background-size: cover;
+                                                    background-color: $color-white;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                .post-meta {
+                                    margin-left: 10px;
+                                    .post-meta-date {
+                                        .date {
+                                            display: block;
+                                            line-height: 1.3;
+                                            font-size: 14px;
+                                            line-height: 18px;
+                                            color: $color-old-silver;
+                                            font-family: $font-texta;
+                                        }
+                                    }
+                                    .post-meta-author {
+                                        .author-name {
+                                            margin: 0;
+                                            padding: 0;
+                                            .field--name-uid {
+                                                background-color: blue;
+                                                display: block;
+                                                margin: 0;
+                                                padding: 0;
+                                                a {
+                                                    display: block;
+                                                    margin: 0;
+                                                    padding: 0;
+                                                    font-family: $font-texta;
+                                                    text-transform: uppercase;
+                                                    color: $color-icon;
+                                                    font-style: normal;
+                                                    font-size: 14px;
+                                                    &::before {
+                                                        content: "by ";
+                                                        text-transform: lowercase;
+                                                        font-family: $font-ps-savoy;
+                                                        font-style: italic;
+                                                        color: $color-old-silver;
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                    .first-published-date {
+                                        display: block;
+                                        line-height: 1.3;
+                                        font-size: 12px;
+                                        line-height: 16px;
+                                        color: $color-old-silver;
+                                        font-family: $font-texta;
+                                        font-style: italic;
+                                    }
+                                }
+                            }
+                            .share {
+                                #block-socialsharingblock {
+                                    float: right;
+                                }
+                            }
+                        }
+                        .featured-thumbnail {
+                            clear: both;
+                            .field--name-field-image {
+                                img {
+                                    max-width: 748px;
+                                    width: 100%;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                    .post-body {
+                        p {
+                            margin-bottom: 20px;
+                            font-size: 18px;
+                            line-height: 30px;
+                            color: $color-menu;
+                            font-family: $font-ps-savoy;
+                        }
+                    }
+                    .detailed-footer {
+                        .cat-sharing {
+                            display: grid;
+                            grid-template-columns: 50% 50%;
+                            grid-template-rows: 1fr auto;
+                            grid-auto-rows: 2px;
+                            gap: 0;
+                            > {
+                                flex-grow: 1 1;
+                            }
+                            .cat {
+                                img {
+                                    width: 75px;
+                                    height: 75px;
+                                }
+                            }
+                            .social-sharing {
+                                .region-social-sharing {
+                                    float: right;
+                                }
+                            }
+                        }
+                        .taxonomies {
+                            display: flex;
+                            .categories {
+                                .field--name-field-category {
+                                    .field__label {
+                                        display: none;
+                                    }
+                                    .field__item {
+                                        a {
+                                            font-family: $font-texta;
+                                            font-size: 14px;
+                                            line-height: 30px;
+                                            color: $color-menu;
+                                            border: 0;
+                                            text-decoration: underline;
+                                            text-transform: uppercase;
+                                            letter-spacing: 1px;
+                                            display: inline-block;
+                                            margin-bottom: 6px;
+                                        }
+                                    }
+                                }
+                            }
+                            .tags {
+                                margin-left: 15px;
+                                .field--name-field-tags {
+                                    .field__label {
+                                        display: none;
+                                    }
+                                    ul {
+                                        li {
+                                            margin-left: 15px;
+                                            list-style-type: disc;
+                                            a {
+                                                font-family: $font-texta;
+                                                font-size: 14px;
+                                                line-height: 30px;
+                                                color: $color-menu;
+                                                border: 0;
+                                                text-decoration: underline;
+                                                text-transform: uppercase;
+                                                letter-spacing: 1px;
+                                                display: inline-block;
+                                                margin-bottom: 6px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .detailed-sidebar {
+                    position: absolute;
+                    top: 25px;
+                    right: 0;
+                    .ad-container {
+                        .your-ad-here {
+                            padding: 25px;
+                            font-family: $font-visbycf-heavy;
+                            background-color: $color-old-silver;
+                            width: 300px;
+                            height: 250px;
+                            &:last-child {
+                                margin-top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .ad-placeholder {
+        padding: 1em;
+        width: 100%;
+        height: 200px;
+        background-color: $color-blakish;
+    }
+}

@@ -32,3 +32,9 @@ taxonomy:
    css:
       theme:
          css/taxonomy.css: {}
+
+detailed:
+   version: 1.0
+   css:
+      theme:
+         css/detailed.css: {}
