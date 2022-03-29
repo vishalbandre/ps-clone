@@ -125,28 +125,31 @@ jQuery(function($) {
 
     $('.views-infinite-scroll-content-wrapper').prepend('<div class="ad_place">Ad Place</div>');
 
-    var fixmeTop = $('.ad_place').offset().top; // get initial position of the element
+    if ($('.ad_place') != 'undefined') {
 
-    $(window).scroll(function() { // assign scroll event listener
+        var fixmeTop = $('.ad_place').offset().top; // get initial position of the element
 
-        var currentScroll = $(window).scrollTop(); // get current position
+        $(window).scroll(function() { // assign scroll event listener
 
-        if (currentScroll >= fixmeTop) { // apply position: fixed if you
-            $('.ad_place').css({ // scroll to that element or below it
-                position: 'fixed',
-                top: '100px',
-                right: '150px',
-                left: 'right',
-                'z-index': '9999'
-            });
-        } else { // apply position: static
-            $('.ad_place').css({ // if you scroll above it
-                position: 'absolute',
-                'z-index': '-9999'
-            });
-        }
+            var currentScroll = $(window).scrollTop(); // get current position
 
-    });
+            if (currentScroll >= fixmeTop) { // apply position: fixed if you
+                $('.ad_place').css({ // scroll to that element or below it
+                    position: 'fixed',
+                    top: '100px',
+                    right: '150px',
+                    left: 'right',
+                    'z-index': '9999'
+                });
+            } else { // apply position: static
+                $('.ad_place').css({ // if you scroll above it
+                    position: 'absolute',
+                    'z-index': '-9999'
+                });
+            }
+
+        });
+    }
 
 });
 
