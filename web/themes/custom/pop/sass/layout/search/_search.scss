@@ -1,4 +1,114 @@
-#main {
+#search-page {
+    main {
+        margin: auto;
+        width: 1160px;
+        @include breakpoint(mobileonly) {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        .region {
+            position: relative;
+            padding: 10px;
+            * {
+                overflow-wrap: break-word;
+                word-wrap: break-word;
+                -ms-word-break: break-all;
+                word-break: break-word;
+                -ms-hyphens: auto;
+                -moz-hyphens: auto;
+                -webkit-hyphens: auto;
+                hyphens: auto;
+            }
+            #search-form {
+                margin-left: 25px;
+                margin-bottom: 25px;
+                .container-inline {
+                    width: 300px;
+                    vertical-align: middle;
+                    white-space: nowrap;
+                    position: relative;
+                    .form-type-search {
+                        label {
+                            font-family: $font-texta;
+                            font-size: 12px;
+                            line-height: 30px;
+                            color: $color-bermuda-gray;
+                        }
+                    }
+                    input.form-search {
+                        padding-left: 1em;
+                        width: 300px;
+                        height: 30px;
+                        border: none;
+                        font-size: 10pt;
+                        border: solid 1px $color-old-silver;
+                        -webkit-border-radius: 5px;
+                        -moz-border-radius: 5px;
+                        border-radius: 5px;
+                        &:focus,
+                        &:hover,
+                        &:active {
+                            outline: none;
+                        }
+                    }
+                    .search-form__submit {
+                        border: none;
+                        outline: none;
+                        padding: 15px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        border-radius: 5px;
+                    }
+                }
+                .search-help-link,
+                .search-advanced {
+                    display: none;
+                }
+            }
+            h2 {
+                display: none;
+            }
+            .item-list {
+                clear: both;
+                .search-results {
+                    li {
+                        .search-result__title {
+                            a {
+                                font-family: $font-visbycf-heavy;
+                                font-size: 20px;
+                                font-weight: bold;
+                                line-height: 26px;
+                                @include breakpoint(mobileonly) {
+                                    font-size: 15px;
+                                    line-height: 20px;
+                                }
+                                color: $color-menu;
+                                &:hover {
+                                    color: $color-icon;
+                                }
+                            }
+                        }
+                        .search-result__snippet-info {
+                            margin-bottom: 20px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: $color-menu;
+                            font-family: $font-texta;
+                            .search-result__info {
+                                font-family: $font-visbycf-heavy;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+ain {
     #content {
         * {
             background-color: $color-white;

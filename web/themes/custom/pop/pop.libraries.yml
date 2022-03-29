@@ -38,3 +38,9 @@ detailed:
    css:
       theme:
          css/detailed.css: {}
+
+search:
+   version: 1.0
+   css:
+      theme:
+         css/search.css: {}
