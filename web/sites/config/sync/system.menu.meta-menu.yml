@@ -1,8 +1,0 @@
-uuid: ee087230-d8f7-45a1-b6df-a81d0dce1aa3
-langcode: en
-status: true
-dependencies: {  }
-id: meta-menu
-label: 'Meta Menu'
-description: 'Listing of pages about PopSugar business. Such as, about us, contact us, terms, privacy and so on.'
-locked: false

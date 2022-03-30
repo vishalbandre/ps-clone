@@ -1,8 +1,0 @@
-uuid: b5bf777d-04ee-481c-8cc9-25060538b45b
-langcode: en
-status: true
-dependencies: {  }
-id: global-navigation
-label: 'Global Navigation'
-description: 'Global Navigation Menu will be used for generating drawer drop down navigation.'
-locked: false

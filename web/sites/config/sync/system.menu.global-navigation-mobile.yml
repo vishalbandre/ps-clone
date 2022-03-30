@@ -1,8 +1,0 @@
-uuid: c68cceb2-a78b-430e-906b-0edd895dd3ea
-langcode: en
-status: true
-dependencies: {  }
-id: global-navigation-mobile
-label: 'Global Navigation Mobile'
-description: 'Global Navigation Menu will be used for generating navigation drawer for mobile site.'
-locked: false

@@ -1,8 +1,0 @@
-uuid: 9a60b51a-5ac0-4eb2-b6ee-31d7559bc81f
-langcode: en
-status: true
-dependencies: {  }
-id: footer---more-popsugar
-label: 'Footer - More PopSugar'
-description: 'More From PopSugar '
-locked: false
