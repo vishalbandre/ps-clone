@@ -1,0 +1,25 @@
+uuid: cf07f3b0-6adf-4d34-8798-b8ad40678651
+langcode: en
+status: true
+dependencies:
+  module:
+    - social_media
+    - system
+  theme:
+    - pop
+id: socialsharingblock
+theme: pop
+region: social_sharing
+weight: 0
+provider: null
+plugin: social_sharing_block
+settings:
+  id: social_sharing_block
+  label: 'Social Sharing block'
+  label_display: '0'
+  provider: social_media
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '/node/*'

@@ -1,0 +1,25 @@
+uuid: b091d82a-3311-4579-9e6f-87e8cfe272d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.global-navigation-mobile
+  module:
+    - system
+  theme:
+    - pop
+id: globalnavigationmobile
+theme: pop
+region: mobile_drawer
+weight: -16
+provider: null
+plugin: 'system_menu_block:global-navigation-mobile'
+settings:
+  id: 'system_menu_block:global-navigation-mobile'
+  label: 'Global Navigation Mobile'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

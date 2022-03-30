@@ -1,0 +1,25 @@
+uuid: 43c838fb-b6ed-4848-af59-2c6fed87497f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:b34ea970-c67a-4bd2-ae68-6527d09b84c7'
+  module:
+    - block_content
+  theme:
+    - pop
+id: adbanner
+theme: pop
+region: ad_banner
+weight: -14
+provider: null
+plugin: 'block_content:b34ea970-c67a-4bd2-ae68-6527d09b84c7'
+settings:
+  id: 'block_content:b34ea970-c67a-4bd2-ae68-6527d09b84c7'
+  label: 'Ad Banner'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

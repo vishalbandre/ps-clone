@@ -1,0 +1,16 @@
+uuid: 5ff39646-496e-46c2-91de-2af16ef7d2f6
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.global-navigation-mobile
+    - taxonomy.vocabulary.categories
+id: global_navigation_mobile
+label: 'Global Navigation Mobile'
+vocabulary: categories
+menu: global-navigation-mobile
+expanded: false
+depth: 1
+menu_parent: 'global-navigation-mobile:'
+description_field_name: ''
+use_term_weight_order: true

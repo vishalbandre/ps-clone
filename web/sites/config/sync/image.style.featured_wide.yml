@@ -1,0 +1,15 @@
+uuid: c0c1b7e3-68e4-4e6f-823b-11723df0cf19
+langcode: en
+status: true
+dependencies: {  }
+name: featured_wide
+label: 'Featured Wide'
+effects:
+  3c082382-5f6c-4ff4-b6f4-d84c7c4c2c2a:
+    uuid: 3c082382-5f6c-4ff4-b6f4-d84c7c4c2c2a
+    id: image_crop
+    weight: 1
+    data:
+      width: 765
+      height: 303
+      anchor: center-center

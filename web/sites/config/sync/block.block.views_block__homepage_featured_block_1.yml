@@ -1,0 +1,29 @@
+uuid: 9744b008-2662-42f0-b4d6-ae9b9575a683
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.homepage_featured
+  module:
+    - system
+    - views
+  theme:
+    - pop
+id: views_block__homepage_featured_block_1
+theme: pop
+region: content
+weight: -22
+provider: null
+plugin: 'views_block:homepage_featured-block_1'
+settings:
+  id: 'views_block:homepage_featured-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

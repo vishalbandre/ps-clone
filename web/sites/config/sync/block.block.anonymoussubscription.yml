@@ -1,0 +1,36 @@
+uuid: 9a64e153-a640-4b93-af7b-ec764c0d0913
+langcode: en
+status: true
+dependencies:
+  module:
+    - anonymous_subscriptions
+    - system
+  theme:
+    - pop
+id: anonymoussubscription
+theme: pop
+region: content
+weight: -13
+provider: null
+plugin: subscribe_block
+settings:
+  id: subscribe_block
+  label: 'Sign Up For Our POPSUGAR Newsletter'
+  label_display: visible
+  provider: anonymous_subscriptions
+  0: node_type
+  1: node_type
+  2: node_type
+  3: node_type
+  4: node_type
+  5: node_type
+  6: node_type
+  7: node_type
+  8: node_type
+  9: node_type
+  node_type: null
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

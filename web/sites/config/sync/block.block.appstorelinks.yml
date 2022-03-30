@@ -1,0 +1,25 @@
+uuid: 6d09ca44-67e7-4ac1-a989-148d4c610168
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ea7e4f69-362d-4c8c-969a-037c939cc7f1'
+  module:
+    - block_content
+  theme:
+    - pop
+id: appstorelinks
+theme: pop
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:ea7e4f69-362d-4c8c-969a-037c939cc7f1'
+settings:
+  id: 'block_content:ea7e4f69-362d-4c8c-969a-037c939cc7f1'
+  label: 'App Store Links'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
