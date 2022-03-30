@@ -26,6 +26,8 @@ regions:
   section: Section
   content: Content
   social_sharing: "Social Sharing Block"
+  social_login: "Social Login Block"
+  social_login_register: "Social Login Register Block"
   sidebar: Sidebar
   drawer: "Sidebar Drawer"
   mobile_drawer: "Mobile Drawer"

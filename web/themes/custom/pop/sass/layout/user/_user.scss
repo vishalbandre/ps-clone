@@ -1,0 +1,269 @@
+#login-content-area,
+#register-content-area {
+    margin: auto;
+    margin-top: 75px;
+    width: 300px;
+    .region-social-login,
+    .region-social-login-register {
+        #block-socialauthlogin,
+        #block-socialauthlogin-2 {
+            h2 {
+                line-height: 36px;
+                font-size: 36px;
+                font-weight: 100;
+                color: $color-blakish;
+                margin-bottom: 20px;
+                font-family: $font-texta;
+            }
+            .content {
+                a {
+                    display: block;
+                    text-align: center;
+                    &:first-child {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        background-color: royalblue;
+                        width: 100%;
+                        padding: 10px;
+                        .auth-icon {
+                            display: none;
+                        }
+                        img {
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 100%;
+                            margin: 0;
+                            padding: 0;
+                            background-color: royalblue;
+                        }
+                        &::before {
+                            content: ' ';
+                            background-image: url('http://popsugar.dev/modules/contrib/social_auth_google/img/google_logo.svg');
+                        }
+                        &::after {
+                            content: "Facebook";
+                            margin: 5px;
+                            color: $color-white;
+                            font-family: $font-visbycf-heavy;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                        }
+                    }
+                    &:last-child {
+                        margin-top: 10px;
+                        padding: 10px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        background-color: #dd4b39;
+                        width: 100%;
+                        .auth-icon {
+                            display: none;
+                        }
+                        mg {
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 100%;
+                            margin: 0;
+                            padding: 0;
+                            background-color: #dd4b39;
+                            mask-size: cover;
+                        }
+                        &::after {
+                            content: "Google";
+                            margin: 5px;
+                            color: $color-white;
+                            font-family: $font-visbycf-heavy;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                        }
+                    }
+                    transition: 0.3s all ease;
+                    border-radius: 3px;
+                    &:hover {
+                        background-color: $color-blakish;
+                    }
+                }
+            }
+        }
+    }
+    .region-content {
+        form {
+            details {
+                display: none;
+            }
+            .field--type-datetime {
+                fieldset {
+                    legend {}
+                }
+            }
+            h2 {
+                font-size: 20px;
+                font-weight: 100;
+                margin: 35px 0 20px;
+                color: $color-bermuda-gray;
+                font-family: $font-texta;
+                font-weight: lighter;
+            }
+            .form-type-email {
+                input.form-email {
+                    width: 100%;
+                    border: 0;
+                    height: 40px;
+                    color: $color-bermuda-gray;
+                    background-color: $color-whitesmoke;
+                    box-shadow: none;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            .form-type-textfield {
+                input.form-text {
+                    width: 100%;
+                    border: 0;
+                    height: 40px;
+                    color: $color-bermuda-gray;
+                    background-color: $color-whitesmoke;
+                    box-shadow: none;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            .form-type-password {
+                input.form-text {
+                    width: 100%;
+                    border: 0;
+                    height: 40px;
+                    color: $color-bermuda-gray;
+                    background-color: $color-whitesmoke;
+                    box-shadow: none;
+                    border-radius: 2px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+            }
+            .field--name-field-date-of-birth {
+                display: none;
+            }
+            .custom-auth-actions,
+            .custom-date {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                .form-submit {
+                    width: 50%;
+                    border: 0;
+                    color: $color-white;
+                    outline: none;
+                    cursor: pointer;
+                    font-size: 14px;
+                    text-shadow: none;
+                    line-height: 20px;
+                    padding: 10px 38px;
+                    text-align: center;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    display: inline-block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    background: $color-bermuda-gray;
+                    background-color: $color-primary;
+                    border-color: $color-bermuda-gray;
+                    -webkit-font-smoothing: antialiased;
+                    font-weight: bold;
+                    transition: 0.3s all ease;
+                    border-radius: 3px;
+                    &:hover {
+                        background-color: $color-blakish;
+                    }
+                }
+                .forgot-pass {
+                    width: 50%;
+                    padding: 10px;
+                    color: $color-gray;
+                    text-align: right;
+                    font-size: 14px;
+                    text-decoration: none;
+                }
+            }
+            .custom-date {
+                .form-item {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+            .register-cls {
+                display: block;
+                margin-top: 10px;
+                color: $color-primary;
+                text-decoration: none;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+#block-socialauthlogin-2 {
+    .divider {
+        margin-top: 25px;
+        padding-bottom: 15px;
+        position: relative;
+        .part-1 {
+            position: absolute;
+            left: 0;
+            width: 45%;
+            border-bottom: solid 1px $color-bermuda-gray;
+        }
+        .part-2 {
+            position: absolute;
+            margin-top: -8px;
+            left: 47%;
+            color: $color-bermuda-gray;
+        }
+        .part-3 {
+            position: absolute;
+            right: 0;
+            width: 45%;
+            border-bottom: solid 1px $color-bermuda-gray;
+        }
+    }
+}
+
+#register-content-area {
+    form {
+        .form-submit {
+            width: 100%;
+            border: 0;
+            color: $color-white;
+            outline: none;
+            cursor: pointer;
+            font-size: 14px;
+            text-shadow: none;
+            line-height: 20px;
+            padding: 10px 38px;
+            text-align: center;
+            margin: 0;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            text-decoration: none;
+            text-transform: uppercase;
+            background: $color-bermuda-gray;
+            background-color: $color-primary;
+            border-color: $color-bermuda-gray;
+            -webkit-font-smoothing: antialiased;
+            font-weight: bold;
+            transition: 0.3s all ease;
+            border-radius: 3px;
+            &:hover {
+                background-color: $color-blakish;
+            }
+        }
+    }
+}
