@@ -171,9 +171,206 @@ function theme_menu_item_link($link) {
   return l($link['title'], $link['href'], $link['localized_options']);
 }
 
-function pop_form_alter(&$form, $form_state) {
+
+/**
+ * Implements pop_form_alter().
+ */
+function pop_form_alter(&$form, Drupal\Core\Form\FormStateInterface $form_state, $form_id){
   if($form['#form_id'] == 'search_block_form') {
     $form['keys']['#attributes']['placeholder'][] = t('Search');
+  }
+
+  /**
+   * Altering the Login Form
+   */
+  if ($form['#form_id'] == 'user_login_form') {
+
+    $form['title'] = array(
+      '#markup' => '<h2>' . t('Already have an account') . '</h2>',
+      '#weight' => -10,
+    );
+
+    // Remove Labels
+    unset($form['name']['#title']);
+    unset($form['pass']['#title']);
+
+    // Remove Description
+    unset($form['name']['#description']);
+    unset($form['pass']['#description']);
+
+    // Remove default Login Button
+    $login_button = $form['actions']['submit'];
+    unset($form['actions']['submit']);
+
+    // Added Placeholders
+    $form['name']['#attributes']['placeholder'][] = t('Username or Email');
+    $form['pass']['#attributes']['placeholder'][] = t('Password');
+
+    // wrap two render array elements together
+    // Create a container element
+    $wrapper = array(
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('custom-auth-actions'),
+      ),
+    );
+
+    // Add form elements to the container
+    // Login Button
+    $wrapper['user-submit-action'] = $login_button;
+
+    // Forgot Password Link
+    $wrapper['user-forgot-password-action'] = array(
+      '#type' => 'text',
+      '#title' => (' forgot-password'),
+      '#markup' => ('<a href="/user/password" data-drupal-link-system-path="user/register" class="forgot-pass">Forgot password<a>'),
+    );
+
+    $form['authactions'] = $wrapper;
+
+    $form['registerhere'] = array(
+      '#type' =>   'text',
+      '#title' => (' register'),
+      '#markup' => (' <a href="/user/register" data-drupal-link-system-path="user/register" class="register-cls">Create Account</a>'),
+    );
+
+  }
+
+  // Altering the Registration Form
+  if ($form['#form_id'] == 'user_register_form') {
+
+    // Unset Labels
+    unset($form['account']['name']['#title']);
+    unset($form['account']['pass']['#title']);
+    unset($form['account']['mail']['#title']);
+
+    $form['account']['pass']['#type'] = 'password';
+    unset($form['account']['pass']['#title']);
+
+    // Setting Placeholders
+    $form['account']['name']['#attributes']['placeholder'][] = t('Username');
+    $form['account']['mail']['#attributes']['placeholder'][] = t('Email');
+    $form['account']['pass']['#attributes']['placeholder'][] = t('Password');
+
+    // Unset Description
+    unset($form['account']['name']['#description']);
+    unset($form['account']['pass']['#description']);
+    unset($form['account']['mail']['#description']);
+
+    // Remove image field from register form
+    unset($form['account']['user_picture']);
+
+    // OR divider
+    $divider = array(
+      '#title' => t(''),
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('or-divider'),
+      )
+    );
+
+    $part_1 = array(
+      '#title' => t('Part 1'),
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('part-1'),
+      )
+    );
+
+    $part_2 = array(
+      '#title' => t('OR'),
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('part-2'),
+      )
+    );
+
+    $part_3 = array(
+      '#title' => t(''),
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('part-3'),
+      )
+    );
+
+    $divider['part_1'] = $part_1;
+    $divider['part_2'] = $part_2;
+    $divider['part_3'] = $part_3;
+
+    $form['account']['or_divider'] = $divider;
+
+    // Date wrapper
+    // Create a container element to wrap date elements
+    $date_wrapper = array(
+      '#title' => t('Birthdate'),
+      '#type' => 'container',
+      '#attributes' => array(
+        'class' => array('custom-date'),
+      )
+    );
+
+    // Generate "Jan" to "Dec" months
+    $month = array(
+      '01' => t('Jan'),
+      '02' => t('Feb'),
+      '03' => t('Mar'),
+      '04' => t('Apr'),
+      '05' => t('May'),
+      '06' => t('Jun'),
+      '07' => t('Jul'),
+      '08' => t('Aug'),
+      '09' => t('Sep'),
+      '10' => t('Oct'),
+      '11' => t('Nov'),
+      '12' => t('Dec'),
+    );
+
+    $date_wrapper['month'] = array(
+      '#title' => t(''),
+      '#type' => 'select',
+      '#description' => "",
+      '#options' => $month,
+    );
+
+    // Generate 1 to 31 in values in $values prefix 0 if value less than 10
+    $i = 1;
+    while ($i <= 31) {
+      // if the number is less than 10 then pad '0'
+      if($i < 10) {
+        $i = sprintf("%02d", $i);
+      }
+      $values[$i] = $i;
+      $i++;
+    }
+
+    $date_wrapper['day'] = array(
+      '#title' => t(''),
+      '#type' => 'select',
+      '#description' => "",
+      '#options' => $values,
+    );
+
+    // Generate years for the range from 1990 to 1922
+    $year = array();
+    $year[0] = t('Year');
+    $i = 1922;
+    while ($i <= 1990) {
+      $year[$i] = $i;
+      $i++;
+    }
+
+    $date_wrapper['year'] = array(
+      '#title' => t(''),
+      '#type' => 'select',
+      '#description' => "",
+      '#options' => $year,
+      '#default_value' => 1990
+    );
+
+    // Add date wrapper to the form
+
+    $form['account']['date'] = $date_wrapper;
+    
   }
 }
 

@@ -44,3 +44,9 @@ search:
    css:
       theme:
          css/search.css: {}
+
+user:
+   version: 1.0
+   css:
+      theme:
+         css/user.css: {}

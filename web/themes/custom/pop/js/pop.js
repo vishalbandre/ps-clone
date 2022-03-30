@@ -7,7 +7,12 @@
              */
             // Set drawer region to hide and apply default tranform matrix with required values.
             $(".region-drawer").hide();
-            document.getElementById("animate-dia").style.transform = "matrix(0.85, 0, 0, 0.85, 0, 0)";
+            var a_dia = document.getElementById("animate-dia");
+
+            // if a_dia is not null, apply the transform matrix to it.
+            if (a_dia != null) {
+                document.getElementById("animate-dia").style.transform = "matrix(0.85, 0, 0, 0.85, 0, 0)";
+            }
 
             // Open main side drawer for desktop navigation
             function openSideDrawer() {
@@ -125,7 +130,9 @@ jQuery(function($) {
 
     $('.views-infinite-scroll-content-wrapper').prepend('<div class="ad_place">Ad Place</div>');
 
-    if ($('.ad_place') != 'undefined') {
+    var ad_place = $('.ad_place').offset();
+
+    if (ad_place != undefined) {
 
         var fixmeTop = $('.ad_place').offset().top; // get initial position of the element
 
@@ -151,7 +158,33 @@ jQuery(function($) {
         });
     }
 
+    // Add OR separator to the register form
+    $('#block-socialauthlogin-2').append('<div class="divider"><div class="part-1"></div><div class="part-2">OR</div><div class="part-3"></div></div>');
+
 });
+
+(function($, window, Drupal) {
+    Drupal.behaviors.date_field = {
+        attach: function(context, settings) {
+            // Generate Date field based on the selected day, month and year combination.
+            var month = $('.custom-date #edit-month').val();
+            var day = $('.custom-date #edit-day').val();
+            var year = $('.custom-date #edit-year').val();
+            var date = month + '/' + day + '/' + year;
+
+            // On month, day, year value change generate date
+            $('.custom-date #edit-month, .custom-date #edit-day, .custom-date #edit-year').change(function() {
+                month = $('.custom-date #edit-month').val();
+                day = $('.custom-date #edit-day').val();
+                year = $('.custom-date #edit-year').val();
+                date = year + '-' + month + '-' + day;
+                // set date value to date field
+                $('#edit-field-date-of-birth-0-value-date').val(date);
+            });
+        }
+    };
+
+})(jQuery, window, Drupal);
 
 
 (function($, window, Drupal) {
